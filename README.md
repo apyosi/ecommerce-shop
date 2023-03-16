@@ -1,3 +1,78 @@
+# Technical Acceptance Criteria: 20%
+To satisfy the Technical Acceptance Criteria, the application must meet the following requirements:
+
+The application should use React and Node.js.
+
+The application should use at least two libraries, packages, or technologies that have not been discussed in the course.
+
+The application should have both GET and POST routes for retrieving and adding new data.
+
+# Concept 10%
+
+To score high on the Concept section, your application must be a unique and novel idea.
+
+ You should clearly and concisely articulate your project idea to the reviewers.
+
+# Deployment: 20%
+
+## To score high on the Deployment section, your application should:
+
+Be deployed on a live URL using Netlify and should load with no errors.
+Have a GitHub repository URL submitted.
+
+# Repository Quality: 10%
+
+## To score high on the Repository Quality section, your repository should:
+
+ Have a unique name.
+
+ Follow best practices for file structure and naming conventions.
+
+ Follow best practices for class/id naming conventions, indentation, quality comments, etc.
+
+ Contain multiple descriptive commit messages.
+
+ Contain a quality README file with a project description, screenshot, and link to the deployed application.
+
+ # Application Quality: 15%
+
+ To score high on the Application Quality section, your application should:
+
+Provide an intuitive and easy-to-navigate user experience.
+Have a clean and polished user interface style.
+Be responsive.
+
+# Presentation 10%
+
+To score high on the Presentation section, your group should:
+
+Use PowerPoint or a similar presentation software to present your project.
+
+Have every group member speak during the presentation.
+Follow the Project Presentation Template.
+
+# Collaboration 15%
+
+To score high on the Col
+laboration section, there should be no major disparities in the number of GitHub contributions between group members.
+
+How to Submit Your Client-Side Single-Page Application
+Each member of your group is required to submit the following for review:
+
+The URL of the deployed application.
+The URL of the GitHub repository, with a unique name and a README file describing the project.
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

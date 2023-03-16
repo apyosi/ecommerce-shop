@@ -4,14 +4,14 @@ import { Link, useParams } from "react-router-dom";
 const Product = ({ products }) => {
   const { id } = useParams();
   console.log(id);
-  // console.log(products);
-  // const product = products.find((item) => item.id.toString() === id);
-  // console.log(typeof(id))
-  // console.log(product);
+  console.log(products);
+  const product = products.find((item) => item.id.toString() === id);
+  console.log(typeof(id))
+  console.log(product);
   return (
     <main id="product">
       <hr />
-{/*       <article className="">
+      <article className="">
         {product && (
           <>
             <div className="card mb-3">
@@ -46,7 +46,7 @@ const Product = ({ products }) => {
             </p>
           </>
         )}
-      </article> */}
+      </article>
     </main>
   );
 };

@@ -8,11 +8,11 @@ function Products({products}) {
         <h1 className="text-center">Products</h1>
         <hr />
         <div className="container">
-          {/* <div className="row g-1 ">
+          <div className="row g-1 ">
             {products.map((item) => (
               <Card key={item.id} item={item} />
             ))}
-          </div> */}
+          </div>
         </div>
       </main>
     </>

@@ -4,7 +4,8 @@ import React from "react";
 function Home({ products }) {
   return (
     <main id="home">
-
+      <h1>Home Page</h1>
+      <hr />
       {/* <div
         id="carouselExampleInterval"
         className="carousel slide"

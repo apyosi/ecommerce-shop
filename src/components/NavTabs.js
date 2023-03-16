@@ -31,6 +31,11 @@ function NavTabs() {
                 Products
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink to="/categories" className="nav-link p-2 m-1">
+                Product Categories
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>

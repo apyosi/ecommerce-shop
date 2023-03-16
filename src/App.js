@@ -11,10 +11,10 @@ function App() {
   const [products, setProducts] = useState([]);
 
   const fetchProducts = async () => {
-    const response = await fetch("https://fakestoreapi.com/products");
+    const response = await fetch("https://dummyjson.com/products/");
     const data = await response.json();
     // console.log(data);
-    setProducts(data);
+    setProducts(data.products);
   };
 
   useEffect(() => {

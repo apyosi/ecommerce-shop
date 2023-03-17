@@ -9,6 +9,7 @@ import "./App.css";
 import Categories from "./pages/Categories";
 import Category from "./pages/Category";
 
+
 function App() {
   const [products, setProducts] = useState([]);
 

@@ -1,5 +1,8 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
+import { FaShoppingCart } from "react-icons/fa";
+import { FaShopify } from "react-icons/fa";
+import { FaShoppingBasket } from "react-icons/fa";
 
 const Product = ({ products }) => {
   const { id } = useParams();
@@ -41,7 +44,9 @@ const Product = ({ products }) => {
                     <p className="card-text"><b>Brand:</b> {product.brand}</p>
                     <p className="card-text">{product.description}</p>
                     <button className="btn bg-dark text-white">
-                      Add to Card
+                    <h1 className="text-bg-danger"><FaShoppingCart></FaShoppingCart></h1>
+                    <FaShoppingBasket ></FaShoppingBasket>
+                    <FaShopify></FaShopify>
                     </button>
                   </div>
                 </div>

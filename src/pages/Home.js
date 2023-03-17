@@ -6,20 +6,20 @@ function Home({ products }) {
     <main id="home">
       <h1>Home Page</h1>
       <hr />
-      {/* <div
+      <div
         id="carouselExampleInterval"
         className="carousel slide"
         data-bs-ride="carousel"
       >
         <div className="carousel-inner">
-          <div className="carousel-item active" data-bs-interval="10000">
-            <img src={products[1].image} className="d-block w-100" alt="..." />
+          <div className="carousel-item active" data-bs-interval="1000">
+            <img src={products[1].images[0]} className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item" data-bs-interval="2000">
-            <img src={products[2].image} className="d-block w-100" alt="..." />
+            <img src={products[2].images[1]} className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src={products[3].image} className="d-block w-100" alt="..." />
+            <img src={products[3].images[2]} className="d-block w-100" alt="..." />
           </div>
         </div>
         <button
@@ -46,7 +46,7 @@ function Home({ products }) {
           ></span>
           <span className="visually-hidden">Next</span>
         </button>
-      </div> */}
+      </div>
 
 
 {/* <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">

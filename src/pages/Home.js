@@ -1,14 +1,23 @@
 import React from "react";
+import Card from "../components/Card";
 // import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-function Home({ products }) {
+function Home({ products, categories }) {
   return (
     <main id="home">
       <h1>Home Page</h1>
       <hr />
-      <div
+      <div className="flex flex-wrap">
+              {products
+                .map((item) => (
+                  <Card key={item.id} item={item} category={item.category} />
+                ))}
+            </div>
+
+
+ {/*      <div
         id="carouselExampleInterval"
-        className="carousel slide"
+        className="carousel slide w-96"
         data-bs-ride="carousel"
       >
         <div className="carousel-inner">
@@ -16,10 +25,10 @@ function Home({ products }) {
             <img src={products[1].images[0]} className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item" data-bs-interval="2000">
-            <img src={products[2].images[1]} className="d-block w-100" alt="..." />
+            <img src={products[1].images[1]} className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src={products[3].images[2]} className="d-block w-100" alt="..." />
+            <img src={products[1].images[2]} className="d-block w-100" alt="..." />
           </div>
         </div>
         <button
@@ -46,7 +55,7 @@ function Home({ products }) {
           ></span>
           <span className="visually-hidden">Next</span>
         </button>
-      </div>
+      </div> */}
 
 
 {/* <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">

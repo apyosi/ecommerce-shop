@@ -3,11 +3,11 @@ import Header from "./Header"
 import NavTabs from "./NavTabs"
 import Footer from "./Footer"
 
-const Layout = () => {
+const Layout = ({ search, setSearch }) => {
   return (
       <div className="App">
-          <Header title="Store title" />
-          <NavTabs  />
+          {/* <Header title="Store title" /> */}
+          <NavTabs search={search} setSearch={setSearch} />
           <Outlet />
           <Footer />
       </div>

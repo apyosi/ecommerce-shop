@@ -30,3 +30,7 @@ code {
     rounded-xl
   }
 }
+
+.active {
+  background-color: indigo;
+}

@@ -68,7 +68,7 @@ function NavTabs({ search, setSearch }) {
             onChange={(e) => setSearch(e.target.value)}
           />
 
-          <button type="submit" onClick={(e) => setSearch(e.target.value)}>
+          <button type="submit" /* onClick={(e) => setSearch(e.target.value)} */>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

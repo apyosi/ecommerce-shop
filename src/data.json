@@ -38,16 +38,18 @@
   },
   {
     "id": 3,
-    "title": "Samsung Universe 9",
-    "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+    "title": "Samsung Galaxy S23 Ultra",
+    "description": "Samsung's new variant which goes beyond to the Universe",
     "price": 1249,
     "discountPercentage": 15.46,
     "rating": 4.09,
     "stock": 36,
     "brand": "Samsung",
     "category": "smartphones",
-    "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-    "images": ["https://i.dummyjson.com/data/products/3/1.jpg"]
+    "thumbnail": "https://images.unsplash.com/photo-1677794438539-b21f8632ab70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
+    "images": ["https://images.unsplash.com/photo-1675285776817-632fb95aff51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1933&q=80",
+"https://images.unsplash.com/photo-1677794438539-b21f8632ab70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
+"https://images.unsplash.com/photo-1676115723792-69e7a3f6d504?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"]
   },
   {
     "id": 4,
@@ -522,7 +524,7 @@
     "stock": 7,
     "brand": "luxury palace",
     "category": "home-decoration",
-    "thumbnail": "https://i.dummyjson.com/data/products/29/thumbnail.webp",
+    "thumbnail": "https://i.dummyjson.com/data/products/29/3.webp",
     "images": [
       "https://i.dummyjson.com/data/products/29/1.jpg",
       "https://i.dummyjson.com/data/products/29/2.jpg",
@@ -1571,7 +1573,7 @@
   },
   {
     "id": 87,
-    "title": "t Temperature Controller Incubator Controller",
+    "title": "Temperature Controller Incubator Controller",
     "description": "Both Heat and Cool Purpose, Temperature control range; -50 to +110, Temperature measurement accuracy; 0.1, Control accuracy; 0.1",
     "price": 40,
     "discountPercentage": 11.3,

@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { BsCart4 } from "react-icons/bs";
 import { SlArrowLeft } from "react-icons/sl";
+import "../assets/css/style.css"
 import { SlArrowRight } from "react-icons/sl";
 import {
   AiOutlineMinus,
@@ -18,6 +19,20 @@ const Product = ({ products }) => {
   // console.log(products);
   const product = products.find((item) => item.id.toString() === id);
   console.log(product);
+  
+  function getRatings()
+  {
+    const starPercentageRounded= `${Math.round(3.5/5)*100}%`;
+    console.log(starPercentageRounded);
+    document.querySelector(`.stars-inner`).style.width=starPercentageRounded;
+    console.log("dflbdl")
+  }
+ 
+    // document.addEventListener('DOMContentLoaded',getRatings);
+    // <script>
+    // document.addEventListener('DOMContentLoaded',getRatings);
+    // </script>
+  
 
   return (
     <>
@@ -107,13 +122,38 @@ const Product = ({ products }) => {
                     <h1 className="text-4xl">{product.title}</h1>
                     <div className="reviews">
                       <div className="flex">
+                        {/* Adding rating Ramaz */}
+
+                        <div className="conteiner">
+                          <table className="table table-striped">
+                              <thead>
+                                  <tr>
+                                    <th>Rating {Math.round(product.rating*10)/10}</th>
+                                  </tr>
+                              </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                  <div className="stars-outer">
+                                    <div className="stars-inner"></div> 
+                                  </div> 
+                                  <span className="number-rating"></span>
+                              </td>
+                            </tr>
+                          </tbody>
+                          </table>
+                        
+                        </div>
+
+
+                        {/* <AiFillStar />
                         <AiFillStar />
                         <AiFillStar />
                         <AiFillStar />
-                        <AiFillStar />
-                        <AiOutlineStar />
+                        <AiOutlineStar /> */}
                       </div>
-                      <p>(20) reviews</p>
+                      {/* ramaz */}
+                      <p>{product.reviewed} reviews</p>
                     </div>
                     <p className="text-">
                       <b>Description: </b>

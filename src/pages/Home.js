@@ -7,7 +7,7 @@ function Home({ products, categories }) {
     <main id="home">
       <h1>Home Page</h1>
       <hr />
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-center">
               {products
                 .map((item) => (
                   <Card key={item.id} item={item} category={item.category} />

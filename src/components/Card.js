@@ -7,9 +7,7 @@ const Card = ({ item, category }) => {
   
     <article className=" border-3 border-gray-300 ">
       <div className="card flex flex-col m-3 p-4 justify-items-end align-align-items-center">
-        {category && (
-          <>
-            <Link to={`${category}/${item.id}`}>
+            <Link to={`/${category}/${item.id}`}>
               <img
                 src={item.thumbnail}
                 className="overflow-hidden my-2 border-black border-solid"
@@ -18,28 +16,9 @@ const Card = ({ item, category }) => {
                 alt={item.id}
               />
             </Link>
-            <Link to={`${category}/${item.id}`}>
+            <Link to={`/${category}/${item.id}`}>
               <h3 className="card-title font-medium font-sans p-1">{item.title}</h3>
             </Link>
-          </>
-        )}
-        {!category && (
-            <>
-              <Link to={`${item.id}`}>
-                <img
-                  src={item.thumbnail}
-                  className="img-thumbnail border border-1 border-white"
-                  width="300px"
-                  height="300px"
-                  alt={item.id}
-                />
-              </Link>
-              <Link to={`${item.id}`}>
-                <h3 className="card-title">{item.title}</h3>
-              </Link>
-            </>
-          )
-        }
         <p className="card-text ">
         <span className="font-bold">Price:</span>  £{item.price}
         </p>

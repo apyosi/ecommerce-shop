@@ -16,8 +16,7 @@
       "https://i.dummyjson.com/data/products/1/3.jpg",
       "https://i.dummyjson.com/data/products/1/4.jpg",
       "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-    ],
-    "reviewed": 81
+    ]
   },
   {
     "id": 2,
@@ -35,8 +34,7 @@
       "https://i.dummyjson.com/data/products/2/2.jpg",
       "https://i.dummyjson.com/data/products/2/3.jpg",
       "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
-    ],
-    "reviewed": 43
+    ]
   },
   {
     "id": 3,
@@ -49,12 +47,9 @@
     "brand": "Samsung",
     "category": "smartphones",
     "thumbnail": "https://images.unsplash.com/photo-1677794438539-b21f8632ab70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
-    "images": [
-      "https://images.unsplash.com/photo-1675285776817-632fb95aff51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1933&q=80",
-      "https://images.unsplash.com/photo-1677794438539-b21f8632ab70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
-      "https://images.unsplash.com/photo-1676115723792-69e7a3f6d504?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-    ],
-    "reviewed": 13
+    "images": ["https://images.unsplash.com/photo-1675285776817-632fb95aff51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1933&q=80",
+"https://images.unsplash.com/photo-1677794438539-b21f8632ab70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
+"https://images.unsplash.com/photo-1676115723792-69e7a3f6d504?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"]
   },
   {
     "id": 4,
@@ -73,8 +68,7 @@
       "https://i.dummyjson.com/data/products/4/3.jpg",
       "https://i.dummyjson.com/data/products/4/4.jpg",
       "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
-    ],
-    "reviewed": 93
+    ]
   },
   {
     "id": 5,
@@ -91,8 +85,7 @@
       "https://i.dummyjson.com/data/products/5/1.jpg",
       "https://i.dummyjson.com/data/products/5/2.jpg",
       "https://i.dummyjson.com/data/products/5/3.jpg"
-    ],
-    "reviewed": 16
+    ]
   },
   {
     "id": 6,
@@ -110,8 +103,7 @@
       "https://i.dummyjson.com/data/products/6/2.jpg",
       "https://i.dummyjson.com/data/products/6/3.png",
       "https://i.dummyjson.com/data/products/6/4.jpg"
-    ],
-    "reviewed": 30
+    ]
   },
   {
     "id": 7,
@@ -129,8 +121,7 @@
       "https://i.dummyjson.com/data/products/7/2.jpg",
       "https://i.dummyjson.com/data/products/7/3.jpg",
       "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
-    ],
-    "reviewed": 62
+    ]
   },
   {
     "id": 8,
@@ -149,8 +140,7 @@
       "https://i.dummyjson.com/data/products/8/3.jpg",
       "https://i.dummyjson.com/data/products/8/4.jpg",
       "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
-    ],
-    "reviewed": 94
+    ]
   },
   {
     "id": 9,
@@ -169,8 +159,7 @@
       "https://i.dummyjson.com/data/products/9/3.png",
       "https://i.dummyjson.com/data/products/9/4.jpg",
       "https://i.dummyjson.com/data/products/9/thumbnail.jpg"
-    ],
-    "reviewed": 96
+    ]
   },
   {
     "id": 10,
@@ -188,8 +177,7 @@
       "https://i.dummyjson.com/data/products/10/2.jpg",
       "https://i.dummyjson.com/data/products/10/3.jpg",
       "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
-    ],
-    "reviewed": 61
+    ]
   },
   {
     "id": 11,
@@ -207,8 +195,7 @@
       "https://i.dummyjson.com/data/products/11/2.jpg",
       "https://i.dummyjson.com/data/products/11/3.jpg",
       "https://i.dummyjson.com/data/products/11/thumbnail.jpg"
-    ],
-    "reviewed": 68
+    ]
   },
   {
     "id": 12,
@@ -227,8 +214,7 @@
       "https://i.dummyjson.com/data/products/12/3.png",
       "https://i.dummyjson.com/data/products/12/4.jpg",
       "https://i.dummyjson.com/data/products/12/thumbnail.jpg"
-    ],
-    "reviewed": 40
+    ]
   },
   {
     "id": 13,
@@ -247,8 +233,7 @@
       "https://i.dummyjson.com/data/products/13/3.jpg",
       "https://i.dummyjson.com/data/products/13/4.jpg",
       "https://i.dummyjson.com/data/products/13/thumbnail.webp"
-    ],
-    "reviewed": 80
+    ]
   },
   {
     "id": 14,
@@ -266,8 +251,7 @@
       "https://i.dummyjson.com/data/products/14/2.jpg",
       "https://i.dummyjson.com/data/products/14/3.jpg",
       "https://i.dummyjson.com/data/products/14/thumbnail.jpg"
-    ],
-    "reviewed": 66
+    ]
   },
   {
     "id": 15,
@@ -286,8 +270,7 @@
       "https://i.dummyjson.com/data/products/15/3.jpg",
       "https://i.dummyjson.com/data/products/15/4.jpg",
       "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
-    ],
-    "reviewed": 78
+    ]
   },
   {
     "id": 16,
@@ -306,8 +289,7 @@
       "https://i.dummyjson.com/data/products/16/3.jpg",
       "https://i.dummyjson.com/data/products/16/4.jpg",
       "https://i.dummyjson.com/data/products/16/thumbnail.jpg"
-    ],
-    "reviewed": 63
+    ]
   },
   {
     "id": 17,
@@ -325,8 +307,7 @@
       "https://i.dummyjson.com/data/products/17/2.jpg",
       "https://i.dummyjson.com/data/products/17/3.jpg",
       "https://i.dummyjson.com/data/products/17/thumbnail.jpg"
-    ],
-    "reviewed": 55
+    ]
   },
   {
     "id": 18,
@@ -345,8 +326,7 @@
       "https://i.dummyjson.com/data/products/18/3.jpg",
       "https://i.dummyjson.com/data/products/18/4.jpg",
       "https://i.dummyjson.com/data/products/18/thumbnail.jpg"
-    ],
-    "reviewed": 86
+    ]
   },
   {
     "id": 19,
@@ -364,8 +344,7 @@
       "https://i.dummyjson.com/data/products/19/2.jpg",
       "https://i.dummyjson.com/data/products/19/3.png",
       "https://i.dummyjson.com/data/products/19/thumbnail.jpg"
-    ],
-    "reviewed": 25
+    ]
   },
   {
     "id": 20,
@@ -384,8 +363,7 @@
       "https://i.dummyjson.com/data/products/20/3.jpg",
       "https://i.dummyjson.com/data/products/20/4.jpg",
       "https://i.dummyjson.com/data/products/20/thumbnail.jpg"
-    ],
-    "reviewed": 91
+    ]
   },
   {
     "id": 21,
@@ -402,8 +380,7 @@
       "https://i.dummyjson.com/data/products/21/1.png",
       "https://i.dummyjson.com/data/products/21/2.jpg",
       "https://i.dummyjson.com/data/products/21/3.jpg"
-    ],
-    "reviewed": 12
+    ]
   },
   {
     "id": 22,
@@ -420,8 +397,7 @@
       "https://i.dummyjson.com/data/products/22/1.jpg",
       "https://i.dummyjson.com/data/products/22/2.jpg",
       "https://i.dummyjson.com/data/products/22/3.jpg"
-    ],
-    "reviewed": 63
+    ]
   },
   {
     "id": 23,
@@ -440,8 +416,7 @@
       "https://i.dummyjson.com/data/products/23/3.jpg",
       "https://i.dummyjson.com/data/products/23/4.jpg",
       "https://i.dummyjson.com/data/products/23/thumbnail.jpg"
-    ],
-    "reviewed": 92
+    ]
   },
   {
     "id": 24,
@@ -460,8 +435,7 @@
       "https://i.dummyjson.com/data/products/24/3.jpg",
       "https://i.dummyjson.com/data/products/24/4.jpg",
       "https://i.dummyjson.com/data/products/24/thumbnail.jpg"
-    ],
-    "reviewed": 88
+    ]
   },
   {
     "id": 25,
@@ -480,8 +454,7 @@
       "https://i.dummyjson.com/data/products/25/3.png",
       "https://i.dummyjson.com/data/products/25/4.jpg",
       "https://i.dummyjson.com/data/products/25/thumbnail.jpg"
-    ],
-    "reviewed": 89
+    ]
   },
   {
     "id": 26,
@@ -501,8 +474,7 @@
       "https://i.dummyjson.com/data/products/26/4.jpg",
       "https://i.dummyjson.com/data/products/26/5.jpg",
       "https://i.dummyjson.com/data/products/26/thumbnail.jpg"
-    ],
-    "reviewed": 83
+    ]
   },
   {
     "id": 27,
@@ -521,8 +493,7 @@
       "https://i.dummyjson.com/data/products/27/3.jpg",
       "https://i.dummyjson.com/data/products/27/4.jpg",
       "https://i.dummyjson.com/data/products/27/thumbnail.webp"
-    ],
-    "reviewed": 41
+    ]
   },
   {
     "id": 28,
@@ -541,8 +512,7 @@
       "https://i.dummyjson.com/data/products/28/3.png",
       "https://i.dummyjson.com/data/products/28/4.jpg",
       "https://i.dummyjson.com/data/products/28/thumbnail.jpg"
-    ],
-    "reviewed": 94
+    ]
   },
   {
     "id": 29,
@@ -561,8 +531,7 @@
       "https://i.dummyjson.com/data/products/29/3.webp",
       "https://i.dummyjson.com/data/products/29/4.webp",
       "https://i.dummyjson.com/data/products/29/thumbnail.webp"
-    ],
-    "reviewed": 90
+    ]
   },
   {
     "id": 30,
@@ -580,8 +549,7 @@
       "https://i.dummyjson.com/data/products/30/2.jpg",
       "https://i.dummyjson.com/data/products/30/3.jpg",
       "https://i.dummyjson.com/data/products/30/thumbnail.jpg"
-    ],
-    "reviewed": 78
+    ]
   },
   {
     "id": 31,
@@ -600,8 +568,7 @@
       "https://i.dummyjson.com/data/products/31/3.jpg",
       "https://i.dummyjson.com/data/products/31/4.jpg",
       "https://i.dummyjson.com/data/products/31/thumbnail.jpg"
-    ],
-    "reviewed": 22
+    ]
   },
   {
     "id": 32,
@@ -619,8 +586,7 @@
       "https://i.dummyjson.com/data/products/32/2.jpg",
       "https://i.dummyjson.com/data/products/32/3.jpg",
       "https://i.dummyjson.com/data/products/32/thumbnail.jpg"
-    ],
-    "reviewed": 76
+    ]
   },
   {
     "id": 33,
@@ -639,8 +605,7 @@
       "https://i.dummyjson.com/data/products/33/3.jpg",
       "https://i.dummyjson.com/data/products/33/4.jpg",
       "https://i.dummyjson.com/data/products/33/thumbnail.jpg"
-    ],
-    "reviewed": 42
+    ]
   },
   {
     "id": 34,
@@ -659,8 +624,7 @@
       "https://i.dummyjson.com/data/products/34/3.jpg",
       "https://i.dummyjson.com/data/products/34/4.jpg",
       "https://i.dummyjson.com/data/products/34/thumbnail.jpg"
-    ],
-    "reviewed": 81
+    ]
   },
   {
     "id": 35,
@@ -679,8 +643,7 @@
       "https://i.dummyjson.com/data/products/35/3.jpg",
       "https://i.dummyjson.com/data/products/35/4.jpg",
       "https://i.dummyjson.com/data/products/35/thumbnail.jpg"
-    ],
-    "reviewed": 63
+    ]
   },
   {
     "id": 36,
@@ -699,8 +662,7 @@
       "https://i.dummyjson.com/data/products/36/3.webp",
       "https://i.dummyjson.com/data/products/36/4.jpg",
       "https://i.dummyjson.com/data/products/36/thumbnail.jpg"
-    ],
-    "reviewed": 80
+    ]
   },
   {
     "id": 37,
@@ -719,8 +681,7 @@
       "https://i.dummyjson.com/data/products/37/3.jpg",
       "https://i.dummyjson.com/data/products/37/4.jpg",
       "https://i.dummyjson.com/data/products/37/thumbnail.jpg"
-    ],
-    "reviewed": 57
+    ]
   },
   {
     "id": 38,
@@ -738,8 +699,7 @@
       "https://i.dummyjson.com/data/products/38/2.jpg",
       "https://i.dummyjson.com/data/products/38/3.jpg",
       "https://i.dummyjson.com/data/products/38/4.jpg"
-    ],
-    "reviewed": 82
+    ]
   },
   {
     "id": 39,
@@ -758,8 +718,7 @@
       "https://i.dummyjson.com/data/products/39/3.jpg",
       "https://i.dummyjson.com/data/products/39/4.jpg",
       "https://i.dummyjson.com/data/products/39/thumbnail.jpg"
-    ],
-    "reviewed": 96
+    ]
   },
   {
     "id": 40,
@@ -775,8 +734,7 @@
     "images": [
       "https://i.dummyjson.com/data/products/40/1.jpg",
       "https://i.dummyjson.com/data/products/40/2.jpg"
-    ],
-    "reviewed": 45
+    ]
   },
   {
     "id": 41,
@@ -795,8 +753,7 @@
       "https://i.dummyjson.com/data/products/41/3.jpg",
       "https://i.dummyjson.com/data/products/41/4.jpg",
       "https://i.dummyjson.com/data/products/41/thumbnail.webp"
-    ],
-    "reviewed": 69
+    ]
   },
   {
     "id": 42,
@@ -815,8 +772,7 @@
       "https://i.dummyjson.com/data/products/42/3.png",
       "https://i.dummyjson.com/data/products/42/4.jpg",
       "https://i.dummyjson.com/data/products/42/thumbnail.jpg"
-    ],
-    "reviewed": 20
+    ]
   },
   {
     "id": 43,
@@ -835,8 +791,7 @@
       "https://i.dummyjson.com/data/products/43/3.jpg",
       "https://i.dummyjson.com/data/products/43/4.jpg",
       "https://i.dummyjson.com/data/products/43/thumbnail.jpg"
-    ],
-    "reviewed": 65
+    ]
   },
   {
     "id": 44,
@@ -855,8 +810,7 @@
       "https://i.dummyjson.com/data/products/44/3.jpg",
       "https://i.dummyjson.com/data/products/44/4.jpg",
       "https://i.dummyjson.com/data/products/44/thumbnail.jpg"
-    ],
-    "reviewed": 69
+    ]
   },
   {
     "id": 45,
@@ -875,8 +829,7 @@
       "https://i.dummyjson.com/data/products/45/3.jpg",
       "https://i.dummyjson.com/data/products/45/4.jpg",
       "https://i.dummyjson.com/data/products/45/thumbnail.jpg"
-    ],
-    "reviewed": 105
+    ]
   },
   {
     "id": 46,
@@ -895,8 +848,7 @@
       "https://i.dummyjson.com/data/products/46/3.jpg",
       "https://i.dummyjson.com/data/products/46/4.jpg",
       "https://i.dummyjson.com/data/products/46/thumbnail.jpg"
-    ],
-    "reviewed": 35
+    ]
   },
   {
     "id": 47,
@@ -914,8 +866,7 @@
       "https://i.dummyjson.com/data/products/47/2.jpg",
       "https://i.dummyjson.com/data/products/47/3.jpg",
       "https://i.dummyjson.com/data/products/47/thumbnail.jpeg"
-    ],
-    "reviewed": 76
+    ]
   },
   {
     "id": 48,
@@ -934,8 +885,7 @@
       "https://i.dummyjson.com/data/products/48/3.jpg",
       "https://i.dummyjson.com/data/products/48/4.jpg",
       "https://i.dummyjson.com/data/products/48/thumbnail.jpg"
-    ],
-    "reviewed": 20
+    ]
   },
   {
     "id": 49,
@@ -953,8 +903,7 @@
       "https://i.dummyjson.com/data/products/49/2.jpg",
       "https://i.dummyjson.com/data/products/49/3.webp",
       "https://i.dummyjson.com/data/products/49/thumbnail.jpg"
-    ],
-    "reviewed": 91
+    ]
   },
   {
     "id": 50,
@@ -971,8 +920,7 @@
       "https://i.dummyjson.com/data/products/50/1.jpeg",
       "https://i.dummyjson.com/data/products/50/2.jpg",
       "https://i.dummyjson.com/data/products/50/3.jpg"
-    ],
-    "reviewed": 15
+    ]
   },
   {
     "id": 51,
@@ -990,8 +938,7 @@
       "https://i.dummyjson.com/data/products/51/2.jpg",
       "https://i.dummyjson.com/data/products/51/3.jpg",
       "https://i.dummyjson.com/data/products/51/thumbnail.jpg"
-    ],
-    "reviewed": 35
+    ]
   },
   {
     "id": 52,
@@ -1003,15 +950,14 @@
     "stock": 128,
     "brand": "FREE FIRE",
     "category": "mens-shirts",
-    "thumbnail": "https://i.dummyjson.com/data/products/52/1.png",
+    "thumbnail": "https://i.dummyjson.com/data/products/52/thumbnail.jpg",
     "images": [
-      "https://i.dummyjson.com/data/products/52/2.png",
       "https://i.dummyjson.com/data/products/52/1.png",
+      "https://i.dummyjson.com/data/products/52/2.png",
       "https://i.dummyjson.com/data/products/52/3.jpg",
       "https://i.dummyjson.com/data/products/52/4.jpg",
       "https://i.dummyjson.com/data/products/52/thumbnail.jpg"
-    ],
-    "reviewed": 33
+    ]
   },
   {
     "id": 53,
@@ -1030,8 +976,7 @@
       "https://i.dummyjson.com/data/products/53/3.jpg",
       "https://i.dummyjson.com/data/products/53/4.jpg",
       "https://i.dummyjson.com/data/products/53/thumbnail.jpg"
-    ],
-    "reviewed": 31
+    ]
   },
   {
     "id": 54,
@@ -1050,8 +995,7 @@
       "https://i.dummyjson.com/data/products/54/3.jpg",
       "https://i.dummyjson.com/data/products/54/4.jpg",
       "https://i.dummyjson.com/data/products/54/thumbnail.jpg"
-    ],
-    "reviewed": 16
+    ]
   },
   {
     "id": 55,
@@ -1070,8 +1014,7 @@
       "https://i.dummyjson.com/data/products/55/3.jpg",
       "https://i.dummyjson.com/data/products/55/4.jpg",
       "https://i.dummyjson.com/data/products/55/thumbnail.jpg"
-    ],
-    "reviewed": 44
+    ]
   },
   {
     "id": 56,
@@ -1091,8 +1034,7 @@
       "https://i.dummyjson.com/data/products/56/4.jpg",
       "https://i.dummyjson.com/data/products/56/5.jpg",
       "https://i.dummyjson.com/data/products/56/thumbnail.jpg"
-    ],
-    "reviewed": 19
+    ]
   },
   {
     "id": 57,
@@ -1111,8 +1053,7 @@
       "https://i.dummyjson.com/data/products/57/3.jpg",
       "https://i.dummyjson.com/data/products/57/4.jpg",
       "https://i.dummyjson.com/data/products/57/thumbnail.jpg"
-    ],
-    "reviewed": 62
+    ]
   },
   {
     "id": 58,
@@ -1131,8 +1072,7 @@
       "https://i.dummyjson.com/data/products/58/3.jpg",
       "https://i.dummyjson.com/data/products/58/4.jpg",
       "https://i.dummyjson.com/data/products/58/thumbnail.jpg"
-    ],
-    "reviewed": 96
+    ]
   },
   {
     "id": 59,
@@ -1151,8 +1091,7 @@
       "https://i.dummyjson.com/data/products/59/3.jpg",
       "https://i.dummyjson.com/data/products/59/4.jpg",
       "https://i.dummyjson.com/data/products/59/thumbnail.jpg"
-    ],
-    "reviewed": 45
+    ]
   },
   {
     "id": 60,
@@ -1170,8 +1109,7 @@
       "https://i.dummyjson.com/data/products/60/2.jpg",
       "https://i.dummyjson.com/data/products/60/3.jpg",
       "https://i.dummyjson.com/data/products/60/thumbnail.jpg"
-    ],
-    "reviewed": 29
+    ]
   },
   {
     "id": 61,
@@ -1188,8 +1126,7 @@
       "https://i.dummyjson.com/data/products/61/1.jpg",
       "https://i.dummyjson.com/data/products/61/2.png",
       "https://i.dummyjson.com/data/products/61/3.jpg"
-    ],
-    "reviewed": 14
+    ]
   },
   {
     "id": 62,
@@ -1205,8 +1142,7 @@
     "images": [
       "https://i.dummyjson.com/data/products/62/1.jpg",
       "https://i.dummyjson.com/data/products/62/2.jpg"
-    ],
-    "reviewed": 52
+    ]
   },
   {
     "id": 63,
@@ -1224,8 +1160,7 @@
       "https://i.dummyjson.com/data/products/63/2.jpg",
       "https://i.dummyjson.com/data/products/63/3.png",
       "https://i.dummyjson.com/data/products/63/4.jpeg"
-    ],
-    "reviewed": 66
+    ]
   },
   {
     "id": 64,
@@ -1243,8 +1178,7 @@
       "https://i.dummyjson.com/data/products/64/2.webp",
       "https://i.dummyjson.com/data/products/64/3.jpg",
       "https://i.dummyjson.com/data/products/64/thumbnail.jpg"
-    ],
-    "reviewed": 89
+    ]
   },
   {
     "id": 65,
@@ -1263,8 +1197,7 @@
       "https://i.dummyjson.com/data/products/65/3.jpg",
       "https://i.dummyjson.com/data/products/65/4.webp",
       "https://i.dummyjson.com/data/products/65/thumbnail.webp"
-    ],
-    "reviewed": 81
+    ]
   },
   {
     "id": 66,
@@ -1283,8 +1216,7 @@
       "https://i.dummyjson.com/data/products/66/3.jpg",
       "https://i.dummyjson.com/data/products/66/4.JPG",
       "https://i.dummyjson.com/data/products/66/thumbnail.jpg"
-    ],
-    "reviewed": 92
+    ]
   },
   {
     "id": 67,
@@ -1303,8 +1235,7 @@
       "https://i.dummyjson.com/data/products/67/3.jpg",
       "https://i.dummyjson.com/data/products/67/4.jpg",
       "https://i.dummyjson.com/data/products/67/thumbnail.jpg"
-    ],
-    "reviewed": 36
+    ]
   },
   {
     "id": 68,
@@ -1320,8 +1251,7 @@
     "images": [
       "https://i.dummyjson.com/data/products/68/1.jpg",
       "https://i.dummyjson.com/data/products/68/2.jpg"
-    ],
-    "reviewed": 58
+    ]
   },
   {
     "id": 69,
@@ -1340,8 +1270,7 @@
       "https://i.dummyjson.com/data/products/69/3.webp",
       "https://i.dummyjson.com/data/products/69/4.jpg",
       "https://i.dummyjson.com/data/products/69/thumbnail.jpg"
-    ],
-    "reviewed": 98
+    ]
   },
   {
     "id": 70,
@@ -1358,8 +1287,7 @@
       "https://i.dummyjson.com/data/products/70/1.jpg",
       "https://i.dummyjson.com/data/products/70/2.jpg",
       "https://i.dummyjson.com/data/products/70/thumbnail.jpg"
-    ],
-    "reviewed": 81
+    ]
   },
   {
     "id": 71,
@@ -1377,8 +1305,7 @@
       "https://i.dummyjson.com/data/products/71/2.jpg",
       "https://i.dummyjson.com/data/products/71/3.webp",
       "https://i.dummyjson.com/data/products/71/thumbnail.jpg"
-    ],
-    "reviewed": 21
+    ]
   },
   {
     "id": 72,
@@ -1397,8 +1324,7 @@
       "https://i.dummyjson.com/data/products/72/3.webp",
       "https://i.dummyjson.com/data/products/72/4.jpg",
       "https://i.dummyjson.com/data/products/72/thumbnail.webp"
-    ],
-    "reviewed": 21
+    ]
   },
   {
     "id": 73,
@@ -1416,8 +1342,7 @@
       "https://i.dummyjson.com/data/products/73/2.webp",
       "https://i.dummyjson.com/data/products/73/3.jpg",
       "https://i.dummyjson.com/data/products/73/thumbnail.jpg"
-    ],
-    "reviewed": 11
+    ]
   },
   {
     "id": 74,
@@ -1436,8 +1361,7 @@
       "https://i.dummyjson.com/data/products/74/3.jpg",
       "https://i.dummyjson.com/data/products/74/4.jpg",
       "https://i.dummyjson.com/data/products/74/thumbnail.jpg"
-    ],
-    "reviewed": 68
+    ]
   },
   {
     "id": 75,
@@ -1455,8 +1379,7 @@
       "https://i.dummyjson.com/data/products/75/2.jpg",
       "https://i.dummyjson.com/data/products/75/3.jpg",
       "https://i.dummyjson.com/data/products/75/thumbnail.jpg"
-    ],
-    "reviewed": 96
+    ]
   },
   {
     "id": 76,
@@ -1473,8 +1396,7 @@
       "https://i.dummyjson.com/data/products/76/1.jpg",
       "https://i.dummyjson.com/data/products/76/2.jpg",
       "https://i.dummyjson.com/data/products/76/thumbnail.jpg"
-    ],
-    "reviewed": 21
+    ]
   },
   {
     "id": 77,
@@ -1492,8 +1414,7 @@
       "https://i.dummyjson.com/data/products/77/2.jpg",
       "https://i.dummyjson.com/data/products/77/3.jpg",
       "https://i.dummyjson.com/data/products/77/thumbnail.jpg"
-    ],
-    "reviewed": 16
+    ]
   },
   {
     "id": 78,
@@ -1506,10 +1427,7 @@
     "brand": "Fashion Jewellery",
     "category": "womens-jewellery",
     "thumbnail": "https://i.dummyjson.com/data/products/78/thumbnail.jpg",
-    "images": [
-      "https://i.dummyjson.com/data/products/78/thumbnail.jpg"
-    ],
-    "reviewed": 61
+    "images": ["https://i.dummyjson.com/data/products/78/thumbnail.jpg"]
   },
   {
     "id": 79,
@@ -1522,10 +1440,7 @@
     "brand": "Fashion Jewellery",
     "category": "womens-jewellery",
     "thumbnail": "https://i.dummyjson.com/data/products/79/thumbnail.jpg",
-    "images": [
-      "https://i.dummyjson.com/data/products/79/1.jpg"
-    ],
-    "reviewed": 27
+    "images": ["https://i.dummyjson.com/data/products/79/1.jpg"]
   },
   {
     "id": 80,
@@ -1544,8 +1459,7 @@
       "https://i.dummyjson.com/data/products/80/3.png",
       "https://i.dummyjson.com/data/products/80/4.jpg",
       "https://i.dummyjson.com/data/products/80/thumbnail.jpg"
-    ],
-    "reviewed": 45
+    ]
   },
   {
     "id": 81,
@@ -1564,8 +1478,7 @@
       "https://i.dummyjson.com/data/products/81/3.jpg",
       "https://i.dummyjson.com/data/products/81/4.webp",
       "https://i.dummyjson.com/data/products/81/thumbnail.jpg"
-    ],
-    "reviewed": 28
+    ]
   },
   {
     "id": 82,
@@ -1584,8 +1497,7 @@
       "https://i.dummyjson.com/data/products/82/3.jpg",
       "https://i.dummyjson.com/data/products/82/4.jpg",
       "https://i.dummyjson.com/data/products/82/thumbnail.jpg"
-    ],
-    "reviewed": 12
+    ]
   },
   {
     "id": 83,
@@ -1604,8 +1516,7 @@
       "https://i.dummyjson.com/data/products/83/3.jpg",
       "https://i.dummyjson.com/data/products/83/4.jpg",
       "https://i.dummyjson.com/data/products/83/thumbnail.jpg"
-    ],
-    "reviewed": 18
+    ]
   },
   {
     "id": 84,
@@ -1622,8 +1533,7 @@
       "https://i.dummyjson.com/data/products/84/1.jpg",
       "https://i.dummyjson.com/data/products/84/2.jpg",
       "https://i.dummyjson.com/data/products/84/thumbnail.jpg"
-    ],
-    "reviewed": 80
+    ]
   },
   {
     "id": 85,
@@ -1640,8 +1550,7 @@
       "https://i.dummyjson.com/data/products/85/1.jpg",
       "https://i.dummyjson.com/data/products/85/2.jpg",
       "https://i.dummyjson.com/data/products/85/thumbnail.jpg"
-    ],
-    "reviewed": 76
+    ]
   },
   {
     "id": 86,
@@ -1660,8 +1569,7 @@
       "https://i.dummyjson.com/data/products/86/3.jpg",
       "https://i.dummyjson.com/data/products/86/4.jpg",
       "https://i.dummyjson.com/data/products/86/thumbnail.jpg"
-    ],
-    "reviewed": 19
+    ]
   },
   {
     "id": 87,
@@ -1680,8 +1588,7 @@
       "https://i.dummyjson.com/data/products/87/3.jpg",
       "https://i.dummyjson.com/data/products/87/4.jpg",
       "https://i.dummyjson.com/data/products/87/thumbnail.jpg"
-    ],
-    "reviewed": 60
+    ]
   },
   {
     "id": 88,
@@ -1700,8 +1607,7 @@
       "https://i.dummyjson.com/data/products/88/3.jpg",
       "https://i.dummyjson.com/data/products/88/4.webp",
       "https://i.dummyjson.com/data/products/88/thumbnail.jpg"
-    ],
-    "reviewed": 15
+    ]
   },
   {
     "id": 89,
@@ -1720,8 +1626,7 @@
       "https://i.dummyjson.com/data/products/89/3.jpg",
       "https://i.dummyjson.com/data/products/89/4.jpg",
       "https://i.dummyjson.com/data/products/89/thumbnail.jpg"
-    ],
-    "reviewed": 31
+    ]
   },
   {
     "id": 90,
@@ -1740,8 +1645,7 @@
       "https://i.dummyjson.com/data/products/90/3.jpg",
       "https://i.dummyjson.com/data/products/90/4.jpg",
       "https://i.dummyjson.com/data/products/90/thumbnail.jpg"
-    ],
-    "reviewed": 71
+    ]
   },
   {
     "id": 91,
@@ -1760,8 +1664,7 @@
       "https://i.dummyjson.com/data/products/91/3.jpg",
       "https://i.dummyjson.com/data/products/91/4.jpg",
       "https://i.dummyjson.com/data/products/91/thumbnail.jpg"
-    ],
-    "reviewed": 21
+    ]
   },
   {
     "id": 92,
@@ -1779,8 +1682,7 @@
       "https://i.dummyjson.com/data/products/92/2.jpg",
       "https://i.dummyjson.com/data/products/92/3.jpg",
       "https://i.dummyjson.com/data/products/92/4.jpg"
-    ],
-    "reviewed": 103
+    ]
   },
   {
     "id": 93,
@@ -1799,8 +1701,7 @@
       "https://i.dummyjson.com/data/products/93/3.jpg",
       "https://i.dummyjson.com/data/products/93/4.jpg",
       "https://i.dummyjson.com/data/products/93/thumbnail.jpg"
-    ],
-    "reviewed": 65
+    ]
   },
   {
     "id": 94,
@@ -1818,8 +1719,7 @@
       "https://i.dummyjson.com/data/products/94/2.jpg",
       "https://i.dummyjson.com/data/products/94/3.jpg",
       "https://i.dummyjson.com/data/products/94/thumbnail.webp"
-    ],
-    "reviewed": 50
+    ]
   },
   {
     "id": 95,
@@ -1838,8 +1738,7 @@
       "https://i.dummyjson.com/data/products/95/3.jpg",
       "https://i.dummyjson.com/data/products/95/4.jpg",
       "https://i.dummyjson.com/data/products/95/thumbnail.jpg"
-    ],
-    "reviewed": 26
+    ]
   },
   {
     "id": 96,
@@ -1858,8 +1757,7 @@
       "https://i.dummyjson.com/data/products/96/3.jpg",
       "https://i.dummyjson.com/data/products/96/4.jpg",
       "https://i.dummyjson.com/data/products/96/thumbnail.jpg"
-    ],
-    "reviewed": 15
+    ]
   },
   {
     "id": 97,
@@ -1878,8 +1776,7 @@
       "https://i.dummyjson.com/data/products/97/3.jpg",
       "https://i.dummyjson.com/data/products/97/4.webp",
       "https://i.dummyjson.com/data/products/97/thumbnail.jpg"
-    ],
-    "reviewed": 78
+    ]
   },
   {
     "id": 98,
@@ -1898,8 +1795,7 @@
       "https://i.dummyjson.com/data/products/98/3.jpg",
       "https://i.dummyjson.com/data/products/98/4.jpg",
       "https://i.dummyjson.com/data/products/98/thumbnail.jpg"
-    ],
-    "reviewed": 21
+    ]
   },
   {
     "id": 99,
@@ -1918,8 +1814,7 @@
       "https://i.dummyjson.com/data/products/99/3.jpg",
       "https://i.dummyjson.com/data/products/99/4.jpg",
       "https://i.dummyjson.com/data/products/99/thumbnail.jpg"
-    ],
-    "reviewed": 64
+    ]
   },
   {
     "id": 100,
@@ -1937,7 +1832,6 @@
       "https://i.dummyjson.com/data/products/100/2.jpg",
       "https://i.dummyjson.com/data/products/100/3.jpg",
       "https://i.dummyjson.com/data/products/100/thumbnail.jpg"
-    ],
-    "reviewed": 30
+    ]
   }
 ]

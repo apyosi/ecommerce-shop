@@ -38,14 +38,11 @@ function NavTabs({ search, setSearch }) {
       </div>
       <div className="md:hidden text-white w-[80px]" onClick={() => setMenu(!menu)}>
         {!menu ? <MenuIcon className="w-9" /> : <XIcon className="w-9"  />}
-      </div> 
-          
-         <div className="absolute text-white w-[80px] right-3" >
-          <ShoppingBagIcon className=" w-8"/>
+      </div>     
+      <div className="absolute text-white w-[80px] right-3" >
+        <ShoppingBagIcon className=" w-8"/>
       </div>
-     
      </div>
-        
         <ul className="hidden  md:flex">
           <li className="link">
             <NavLink to="/" className=" text-2xl text-white px-2 m-1 rounded-xl" >  Home</NavLink>
@@ -80,10 +77,6 @@ function NavTabs({ search, setSearch }) {
             <SearchIcon className="w-5 h-5 left-48 top-8 absolute text-gray-500  md:w-8 md:h-8 md:left-64 md:top-7 text-bold text-2xl mx-2"></SearchIcon>
           </button>
         </form>
-
-      <div className="absolute text-white w-[80px]" onClick={() => setMenu(!menu)}>
-          <ShoppingBagIcon className="w-9"/>
-      </div>
       </div>
      {menuBar}
     </nav>

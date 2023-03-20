@@ -950,10 +950,10 @@
     "stock": 128,
     "brand": "FREE FIRE",
     "category": "mens-shirts",
-    "thumbnail": "https://i.dummyjson.com/data/products/52/thumbnail.jpg",
+    "thumbnail": "https://i.dummyjson.com/data/products/52/1.png",
     "images": [
-      "https://i.dummyjson.com/data/products/52/1.png",
       "https://i.dummyjson.com/data/products/52/2.png",
+      "https://i.dummyjson.com/data/products/52/1.png",
       "https://i.dummyjson.com/data/products/52/3.jpg",
       "https://i.dummyjson.com/data/products/52/4.jpg",
       "https://i.dummyjson.com/data/products/52/thumbnail.jpg"

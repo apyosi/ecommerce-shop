@@ -39,7 +39,10 @@ function NavTabs({ search, setSearch }) {
       <div className="md:hidden text-white w-[80px]" onClick={() => setMenu(!menu)}>
         {!menu ? <MenuIcon className="w-9" /> : <XIcon className="w-9"  />}
       </div> 
-    
+          
+         <div className="absolute text-white w-[80px] right-3" >
+          <ShoppingBagIcon className=" w-8"/>
+      </div>
      
      </div>
         
@@ -48,7 +51,7 @@ function NavTabs({ search, setSearch }) {
             <NavLink to="/" className=" text-2xl text-white px-2 m-1 rounded-xl" >  Home</NavLink>
           </li>
           <li className="link">
-            <NavLink to="/men" className=" text-2xl text-white px-2 m-1 rounded-xl">Men</NavLink>
+            <NavLink to="/men"  className=" text-2xl text-white px-2 m-1 rounded-xl">Men</NavLink>
           </li>
           <li className="link">
             <NavLink to="/women" className="text-2xl text-white px-2 m-1 rounded-xl">Women</NavLink>

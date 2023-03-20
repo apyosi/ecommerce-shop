@@ -11,7 +11,6 @@ import {
   AiFillStar,
   AiOutlineStar,
 } from "react-icons/ai";
-import ratings from "../components/starRating";
 import OtherProducts from "../components/OtherProducts";
 
 const Product = ({ products }) => {

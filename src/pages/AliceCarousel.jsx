@@ -17,10 +17,23 @@ function Carousel() {
   }
 
   useEffect(() => {
-    fetch('https://example.com/api')
+    fetch('https://dummyjson.com/products/categories')
       .then(response => response.json())
       .then(data => setData(data));
   }, []);
+
+  <AliceCarousel>
+  {data.map(item => (
+    <div key={item.id}>
+      <img src={item.image} alt={item.title} />
+      <h2>{item.title}</h2>
+      <p>{item.description}</p>
+    </div>
+  ))}
+</AliceCarousel>
+
+
+
   
   
   export default Carousel;

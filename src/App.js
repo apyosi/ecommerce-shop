@@ -10,6 +10,7 @@ import "./App.css";
 import Categories from "./pages/Categories";
 import Category from "./pages/Category";
 import Search from "./pages/Search";
+import ScrollBtn from "./components/ScrollBtn"
 
 function App() {
   const [search, setSearch] = useState("");
@@ -146,6 +147,7 @@ function App() {
           </Route>
         </Routes>
       </Router>
+      <ScrollBtn />
     </div>
   );
 }

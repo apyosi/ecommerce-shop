@@ -1,15 +1,15 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import { FaShoppingCart } from "react-icons/fa";
-import { BsCart4 } from "react-icons/bs";
+// import { FaShoppingCart } from "react-icons/fa";
+// import { BsCart4 } from "react-icons/bs";
 import { SlArrowLeft } from "react-icons/sl";
 import "../assets/css/style.css"
 import { SlArrowRight } from "react-icons/sl";
 import {
   AiOutlineMinus,
   AiOutlinePlus,
-  AiFillStar,
-  AiOutlineStar,
+  // AiFillStar,
+  // AiOutlineStar,
 } from "react-icons/ai";
 import OtherProducts from "../components/OtherProducts";
 

@@ -3,6 +3,7 @@ import Card from "../components/Card";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
+
 function Home({ products, categories }) {
   return (
     <main id="home" className="container mx-auto my-8 px-4">
@@ -11,12 +12,14 @@ function Home({ products, categories }) {
       <div className="corousel-cards">
         <AliceCarousel
           autoPlayInterval={3000}
+          autoPlayStrategy= ""
           autoPlayDirection="rtl"
           autoPlay={true}
+          controlsStrategy="responsive"
           fadeOutAnimation={true}
-          mouseDragEnabled={true}
-          buttonsDisabled={true}
-          dotsDisabled={false}
+          mouseDragEnabled={false}
+          dotsDisabled={true}
+          dotsClass="alice-carousel__dots" // Use dotsClass to target dots with CSS 
           responsive={{
             0: { items: 1 },
             768: { items: 3 },
@@ -37,6 +40,7 @@ function Home({ products, categories }) {
             <Card key={item.id} item={item} category={item.category} />
           ))}
       </div>
+
 
     </main>
   );

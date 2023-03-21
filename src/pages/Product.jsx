@@ -22,10 +22,14 @@ const Product = ({ products }) => {
   
   function getRatings()
   {
-    const starPercentageRounded= `${Math.round(3.5/5)*100}%`;
-    console.log(starPercentageRounded);
-    document.querySelector(`.stars-inner`).style.width=starPercentageRounded;
-    console.log("dflbdl")
+    setTimeout(() => {
+      const starPercentageRounded = (product.rating/5)*100;
+      console.log(starPercentageRounded);
+      const el = document.querySelector(".stars-inner");
+      el.style.width = Math.round(starPercentageRounded) +"%";
+      console.log(el);
+    },0)
+
   }
  
     // document.addEventListener('DOMContentLoaded',getRatings);
@@ -128,21 +132,21 @@ const Product = ({ products }) => {
                           <table className="table table-striped">
                               <thead>
                                   <tr>
-                                    <th>Rating {Math.round(product.rating*10)/10}</th>
+                                    <th>Rating  {product.rating}</th>
                                   </tr>
                               </thead>
                           <tbody>
                             <tr>
                               <td>
                                   <div className="stars-outer">
-                                    <div className="stars-inner"></div> 
+                                    <div id="toni" className="stars-inner"></div> 
                                   </div> 
                                   <span className="number-rating"></span>
                               </td>
                             </tr>
                           </tbody>
                           </table>
-                        
+                          
                         </div>
 
 
@@ -226,6 +230,7 @@ const Product = ({ products }) => {
           product={product}
         />
       </section>
+      {getRatings()}
     </>
   );
 };

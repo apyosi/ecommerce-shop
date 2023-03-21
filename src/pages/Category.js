@@ -26,7 +26,7 @@ const Category = ({ products}) => {
       <h2 className="text-4xl p-2">{id.toUpperCase()}</h2>
       </div>
       <hr />
-      <div className="flex flex-wrap gap-2 mt-2">
+      <div className=" flex flex-wrap justify-center gap-2 mt-2">
         {products
           .filter((item) => item.category === id)
           .map((item) => (

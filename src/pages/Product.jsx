@@ -1,15 +1,15 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import { FaShoppingCart } from "react-icons/fa";
-import { BsCart4 } from "react-icons/bs";
+// import { FaShoppingCart } from "react-icons/fa";
+// import { BsCart4 } from "react-icons/bs";
 import { SlArrowLeft } from "react-icons/sl";
 import "../assets/css/style.css"
 import { SlArrowRight } from "react-icons/sl";
 import {
   AiOutlineMinus,
   AiOutlinePlus,
-  AiFillStar,
-  AiOutlineStar,
+  // AiFillStar,
+  // AiOutlineStar,
 } from "react-icons/ai";
 import OtherProducts from "../components/OtherProducts";
 
@@ -22,10 +22,14 @@ const Product = ({ products }) => {
   
   function getRatings()
   {
-    const starPercentageRounded= `${Math.round(3.5/5)*100}%`;
-    console.log(starPercentageRounded);
-    document.querySelector(`.stars-inner`).style.width=starPercentageRounded;
-    console.log("dflbdl")
+    setTimeout(() => {
+      const starPercentageRounded = (product.rating/5)*100;
+      console.log(starPercentageRounded);
+      const el = document.querySelector(".stars-inner");
+      el.style.width = Math.round(starPercentageRounded) +"%";
+      console.log(el);
+    },0)
+
   }
  
     // document.addEventListener('DOMContentLoaded',getRatings);
@@ -41,8 +45,8 @@ const Product = ({ products }) => {
         <article className="">
           {product && (
             <>
-              <div className="flex gap-4">
-                <div id="images" className="w-1/3">
+              <div className="w-[90%] mx-auto flex flex-col-reverse gap-4 md:flex-row ">
+                <div id="images" className="w-full md:w-1/2">
                   {/* <div className="all-images">
                       <img
                         src={product.images[0]}
@@ -72,21 +76,21 @@ const Product = ({ products }) => {
                       >
                         <img
                           src={product.images[0]}
-                          className="d-block w-100"
+                          className="d-block w-100 h-[600] object-cover"
                           alt="..."
                         />
                       </div>
                       <div className="carousel-item" data-bs-interval="2000">
                         <img
                           src={product.images[1]}
-                          className="d-block w-100"
+                          className="d-block w-100 h-[600] object-cover"
                           alt="..."
                         />
                       </div>
                       <div className="carousel-item" data-bs-interval="2000">
                         <img
                           src={product.images[2]}
-                          className="d-block w-100"
+                          className="d-block w-100 h-[600] object-cover"
                           alt="..."
                         />
                       </div>
@@ -117,32 +121,32 @@ const Product = ({ products }) => {
                     </button>
                   </div>
                 </div>
-                <div id="details" className="w-2/3">
+                <div id="details" className="w-full md:w-1/2">
                   <div className="flex flex-col gap-4 text-start ">
                     <h1 className="text-4xl">{product.title}</h1>
                     <div className="reviews">
                       <div className="flex">
                         {/* Adding rating Ramaz */}
 
-                        <div className="conteiner">
+                        <div className="container">
                           <table className="table table-striped">
                               <thead>
                                   <tr>
-                                    <th>Rating {Math.round(product.rating*10)/10}</th>
+                                    <th>Rating  {product.rating}</th>
                                   </tr>
                               </thead>
                           <tbody>
                             <tr>
                               <td>
                                   <div className="stars-outer">
-                                    <div className="stars-inner"></div> 
+                                    <div id="toni" className="stars-inner"></div> 
                                   </div> 
                                   <span className="number-rating"></span>
                               </td>
                             </tr>
                           </tbody>
                           </table>
-                        
+                          
                         </div>
 
 
@@ -226,6 +230,7 @@ const Product = ({ products }) => {
           product={product}
         />
       </section>
+      {getRatings()}
     </>
   );
 };

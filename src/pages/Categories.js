@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Card from "../components/Card";
 const Categories = ({ categories, products }) => {
-
-
   return (
     <>
       {/* <h1>Categories</h1> */}
@@ -12,13 +10,13 @@ const Categories = ({ categories, products }) => {
         <>
           <section>
             <div className="flex justify-between">
-            <h2 className="text-4xl p-2">{category.toUpperCase()}</h2>
-            <Link to={`/categories/${category}`}>
-              <p className="text-4xl p-2 underline">All {category} items</p>
-            </Link>
+              <h2 className="text-4xl p-2">{category.toUpperCase()}</h2>
+              <Link to={`/categories/${category}`}>
+                <p className="text-4xl p-2 underline">All {category} items</p>
+              </Link>
             </div>
             <hr />
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap justify-center">
               {products
                 .filter((item) => item.category === category)
                 .map((item) => (

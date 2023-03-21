@@ -26,6 +26,8 @@ const Wrapper = ({ children }) => {
 };
 
 function App() {
+
+
   const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [categories, setCategories] = useState([

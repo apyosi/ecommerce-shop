@@ -5,7 +5,7 @@ import Card from "../components/Card";
 function Home({ products, categories }) {
   return (
     <main id="home">
-      <h1>Home Page</h1>
+      
       <hr />
       <div className="flex flex-wrap justify-center">
               {products

@@ -55,7 +55,7 @@ function App() {
   const [products, setProducts] = useState(database);
 
   useEffect(() => {
-    /*     const fetchProducts = async () => {
+    const fetchProducts = async () => {
       try {
         // const response = await fetch("https://dummyjson.com/products/");
         const response = await fetch("https://dummyjson.com/products?limit=100");
@@ -66,7 +66,7 @@ function App() {
         console.log(err);
       }
     };
-    fetchProducts(); */
+    fetchProducts();
 
     console.log(search);
     const filteredResults = products.filter(

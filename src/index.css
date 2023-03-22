@@ -27,7 +27,6 @@ code {
   .link {
     @apply
     hover:underline
-    rounded-xl
   }
 }
 

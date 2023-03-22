@@ -10,6 +10,8 @@ import "./App.css";
 import Categories from "./pages/Categories";
 import Category from "./pages/Category";
 import Search from "./pages/Search";
+import Cart from './pages/Cart';
+import cartData from "../src/cart.json";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -37,6 +39,7 @@ function App() {
     "lighting",
   ]);
   const [products, setProducts] = useState(database);
+  const [cartData, setCartData] = useState(database);
 
   useEffect(() => {
     /*     const fetchProducts = async () => {
@@ -140,6 +143,10 @@ function App() {
                 element={<Product products={products} />}
               />
             </Route>
+            {/* Ramaz */}
+                       
+              <Route path="/cart" element={<Cart />} />
+                   
 
             {/* <Route path="search" element={<Search categories={categories} products={products} />} /> */}
             <Route path="*" element={<NotFound />} />

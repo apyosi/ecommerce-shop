@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../components/Card";
+import Card from "../components/Cards";
 // import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 function Home({ products, categories }) {

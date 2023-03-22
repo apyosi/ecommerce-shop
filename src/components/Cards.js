@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Card = ({ item, category }) => {
+const Cards = ({ item, category }) => {
 
   return (
   
     <article className=" border-3 border-gray-300 ">
-      <div className="card flex flex-col m-3 p-4 justify-items-end align-align-items-center">
+      <div className="card flex flex-col m-2 p-4 justify-items-end align-align-items-center">
             <Link to={`/${category}/${item.id}`}>
               <img
-                src={item.thumbnail}
+                src={item.images[0]}
                 className="overflow-hidden my-2 border-black border-solid"
-                width="300px"
-                height="300px"
+                width="50px"
+                height="50px"
                 alt={item.id}
               />
             </Link>
@@ -35,4 +35,4 @@ const Card = ({ item, category }) => {
   );
 };
 
-export default Card;
+export default Cards;

@@ -190,6 +190,7 @@ const Product = ({ products }) => {
                         </span>
                       </p>
                     </div>
+                    {/* Ramaz */}
                     <div className="flex flex-row flex-wrap gap-2">
                       <button
                         className="w-60 justify-center text-2xl flex flex-row p-2 rounded-md bg-white text-purple-700 border-2 border-purple-700"

@@ -25,6 +25,11 @@ function NavTabs({ search, setSearch }) {
           <li className="border-b-2  border-zinc-300 w-full">
             <NavLink to="/categories" className="nav-link text-2xl text-white px-2 m-1" onClick={() => setMenu(!menu)}> All Products</NavLink>
           </li>
+          {/* Ramaz */}
+          <li className="border-b-2 border-zinc-300 w-full">
+            <NavLink to="/cart" className="nav-link text-2xl text-white px-2 m-1" onClick={() => setMenu(!menu)}>Cart</NavLink>
+          </li>
+
         </ul>
       </div>
   }
@@ -64,6 +69,10 @@ function NavTabs({ search, setSearch }) {
           </li>
           <li className="link sm:mx-[-15px]">
             <NavLink to="/categories" className="text-2xl text-white px-2 m-1 rounded-xl sm:text-[18px] lg:pl-5 lg:text-xl"> All </NavLink>                       
+          </li>
+          {/* Ramaz */}
+          <li className="link">
+            <NavLink to="/cart" className="text-2xl text-white px-2 m-1 rounded-xl">Shopping Cart</NavLink>                       
           </li>
         </ul>
     

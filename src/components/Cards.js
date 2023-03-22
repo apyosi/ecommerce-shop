@@ -5,14 +5,14 @@ const Cards = ({ item, category }) => {
 
   return (
   
-    <article className="">
-      <div className="card flex bg-slate-50 flex-col m-3 p-3 justify-items-end align-items-center border-0 shadow-xl">
+    <article className=" border-3 border-gray-300 ">
+      <div className="card flex flex-col m-2 p-4 justify-items-end align-align-items-center">
             <Link to={`/${category}/${item.id}`}>
               <img
-                src={item.thumbnail}
-                className="overflow-hidden my-2 border-black border-solid w-80 h-80 object-cover"
-                width="300px"
-                height="300px"
+                src={item.images[0]}
+                className="overflow-hidden my-2 border-black border-solid"
+                width="50px"
+                height="50px"
                 alt={item.id}
               />
             </Link>

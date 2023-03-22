@@ -13,6 +13,8 @@ import Search from "./pages/Search";
 import ScrollBtn from "./components/ScrollBtn"
 
 function App() {
+
+
   const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [categories, setCategories] = useState([

@@ -42,10 +42,10 @@ const Product = ({ products }) => {
     <>
       <main id="product">
         <hr />
-        <article className="">
+        <article className="mt-[120px]">
           {product && (
             <>
-              <div className="w-[90%] mx-auto flex flex-col-reverse gap-4 md:flex-row ">
+              <div className="w-[90%]  mx-auto flex flex-col-reverse gap-4 md:flex-row ">
                 <div id="images" className="w-full md:w-1/2">
                   {/* <div className="all-images">
                       <img

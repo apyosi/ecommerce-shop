@@ -26,11 +26,36 @@ code {
 @layer components {
   .link {
     @apply
-    hover:bg-purple-800
-    rounded-xl
+    hover:underline
   }
 }
 
 .active {
   background-color: indigo;
 }
+
+.alice-carousel__dots > li:nth-child(n+5) {
+  display: none;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.alice-carousel__prev-btn-item {
+  position: relative;
+right: 25%;
+  
+}
+
+.alice-carousel__next-btn-item {
+
+  position: relative;
+  right: 25%;
+}
+
+
+
+

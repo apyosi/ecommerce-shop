@@ -1,5 +1,10 @@
-import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect, useLayoutEffect, useState } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import database from "./data.json";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
@@ -12,8 +17,19 @@ import Category from "./pages/Category";
 import Search from "./pages/Search";
 import Cart from './pages/Cart';
 import cartData from "../src/cart.json";
+import ScrollBtn from "./components/ScrollBtn";
+
+const Wrapper = ({ children }) => {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [location.pathname]);
+  return children;
+};
 
 function App() {
+
+
   const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [categories, setCategories] = useState([
@@ -67,67 +83,77 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Routes>
-          <Route
-            path="/"
-            element={<Layout search={search} setSearch={setSearch} />}
-          >
+        <Wrapper>
+          <Routes>
             <Route
-              index
-              element={
-                <Home categories={categories} products={searchResults} />
-              }
-            ></Route>
-            <Route path=":id/:id" element={<Product products={products} />} />
-            <Route path="men">
+              path="/"
+              element={<Layout search={search} setSearch={setSearch} />}
+            >
               <Route
                 index
                 element={
-                  <Categories
-                    categories={["mens-shirts", "mens-shoes", "mens-watches"]}
-                    products={products}
-                  />
+                  <Home categories={categories} products={searchResults} />
                 }
-              />
+              ></Route>
               <Route path=":id/:id" element={<Product products={products} />} />
-            </Route>
+              <Route path="men">
+                <Route
+                  index
+                  element={
+                    <Categories
+                      categories={["mens-shirts", "mens-shoes", "mens-watches"]}
+                      products={products}
+                    />
+                  }
+                />
+                <Route
+                  path=":id/:id"
+                  element={<Product products={products} />}
+                />
+              </Route>
 
-            <Route path="women">
-              <Route
-                index
-                element={
-                  <Categories
-                    categories={[
-                      "womens-dresses",
-                      "womens-shoes",
-                      "womens-watches",
-                      "womens-bags",
-                      "womens-jewellery",
-                    ]}
-                    products={products}
-                  />
-                }
-              />
-              <Route path=":id/:id" element={<Product products={products} />} />
-            </Route>
+              <Route path="women">
+                <Route
+                  index
+                  element={
+                    <Categories
+                      categories={[
+                        "womens-dresses",
+                        "womens-shoes",
+                        "womens-watches",
+                        "womens-bags",
+                        "womens-jewellery",
+                      ]}
+                      products={products}
+                    />
+                  }
+                />
+                <Route
+                  path=":id/:id"
+                  element={<Product products={products} />}
+                />
+              </Route>
 
-            <Route path="tech">
-              <Route
-                index
-                element={
-                  <Categories
-                    categories={["automotive", "laptops", "smartphones"]}
-                    products={products}
-                  />
-                }
-              />
-              <Route path=":id/:id" element={<Product products={products} />} />
-            </Route>
+              <Route path="tech">
+                <Route
+                  index
+                  element={
+                    <Categories
+                      categories={["automotive", "laptops", "smartphones"]}
+                      products={products}
+                    />
+                  }
+                />
+                <Route
+                  path=":id/:id"
+                  element={<Product products={products} />}
+                />
+              </Route>
 
-            <Route path="products">
-              <Route index element={<Products products={products} />} />
-              <Route path=":id" element={<Product products={products} />} />
-            </Route>
+              <Route path="products">
+                <Route index element={<Products products={products} />} />
+                <Route path=":id" element={<Product products={products} />} />
+              </Route>
 
             <Route path="categories">
               <Route
@@ -148,11 +174,13 @@ function App() {
               <Route path="/cart" element={<Cart />} />
                    
 
-            {/* <Route path="search" element={<Search categories={categories} products={products} />} /> */}
-            <Route path="*" element={<NotFound />} />
-          </Route>
-        </Routes>
+              {/* <Route path="search" element={<Search categories={categories} products={products} />} /> */}
+              <Route path="*" element={<NotFound />} />
+            </Route>
+          </Routes>
+        </Wrapper>
       </Router>
+      <ScrollBtn />
     </div>
   );
 }

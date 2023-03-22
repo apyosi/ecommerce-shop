@@ -1,24 +1,22 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Card from "../components/Cards";
+import Card from "../components/Card";
 const Categories = ({ categories, products }) => {
-
-
   return (
     <>
       {/* <h1>Categories</h1> */}
 
       {categories.map((category) => (
         <>
-          <section>
-            <div className="flex justify-between">
-            <h2 className="text-4xl p-2">{category.toUpperCase()}</h2>
-            <Link to={`/categories/${category}`}>
-              <p className="text-4xl p-2 underline">All {category} items</p>
-            </Link>
+          <section className="mt-[130px]">
+            <div className="flex justify-between text-slate-600">
+              <h2 className="text-3xl p-2">{category.toUpperCase()}</h2>
+              <Link to={`/categories/${category}`}>
+                <p className="text-2xl p-2 underline">All {category} items</p>
+              </Link>
             </div>
-            <hr />
-            <div className="flex flex-wrap">
+            <hr className="line" />
+            <div className="flex flex-wrap justify-center">
               {products
                 .filter((item) => item.category === category)
                 .map((item) => (

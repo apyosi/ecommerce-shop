@@ -35,15 +35,16 @@ function NavTabs({ search, setSearch }) {
      <div className="flex mx-auto p-3 items-center justify-evently">
       <div className="sm:mx-[-110px]" >
         <Link to="/">
-        <h1 className=" text-3xl text-white lg:text-4xl md:text-3xl px-5 ">ShopAddict</h1>
+        <h1 className=" text-4xl text-white lg:text-4xl md:text-3xl px-5 ">ShopAddict</h1>
         </Link>
       </div>
       <div className="fixed left-7 md:hidden text-white w-[80px]" onClick={() => setMenu(!menu)}>
-        {!menu ? <MenuIcon className="w-9" /> : <XIcon className="w-9"  />}
+        {!menu ? <MenuIcon className="w-11" /> : <XIcon className="w-11"  />}
       </div> 
           
          <div className="fixed text-white z-40 w-[80px] sm:right-[-20px] right-1" >
-          <ShoppingBagIcon className=" w-8"/>
+          <ShoppingBagIcon className=" w-11"/>
+          <span className=" absolute text-gray-700 left-5 top-6 w-6 rounded-full bg-white">8</span>
       </div>
      
      </div>

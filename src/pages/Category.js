@@ -20,7 +20,11 @@ const Category = ({ products}) => {
   }, []); */
 
   return (
-    <>
+
+
+
+    
+ <>
     <section>
       <div className="flex justify-between">
       <h2 className="text-4xl p-2">{id.toUpperCase()}</h2>

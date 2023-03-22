@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { MenuIcon, SearchIcon, XIcon, ShoppingBagIcon} from '@heroicons/react/outline'
 
 function NavTabs({ search, setSearch }) {
@@ -34,7 +34,9 @@ function NavTabs({ search, setSearch }) {
     <nav className="fixed top-0 w-full flex flex-col justify-evently p-2  md:flex-row   h-[auto] z-10 bg-purple-700">
      <div className="flex mx-auto p-3 items-center justify-evently">
       <div className="sm:mx-[-110px]" >
+        <Link to="/">
         <h1 className=" text-3xl text-white lg:text-4xl md:text-3xl px-5 ">ShopAddict</h1>
+        </Link>
       </div>
       <div className="fixed left-7 md:hidden text-white w-[80px]" onClick={() => setMenu(!menu)}>
         {!menu ? <MenuIcon className="w-9" /> : <XIcon className="w-9"  />}

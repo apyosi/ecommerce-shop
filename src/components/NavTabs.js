@@ -47,10 +47,14 @@ function NavTabs({ search, setSearch }) {
         {!menu ? <MenuIcon className="w-11" /> : <XIcon className="w-11"  />}
       </div> 
           
-         <div className="fixed text-white z-40 w-[80px] sm:right-[-20px] right-1" >
-          <ShoppingBagIcon className=" w-11"/>
-          <span className=" absolute text-gray-700 left-5 top-6 w-6 rounded-full bg-white">8</span>
-      </div>
+
+            <NavLink to="/cart" className="text-2xl text-white px-2 m-1 rounded-xl">
+            <div className="fixed text-white z-40 w-[80px] sm:right-[-20px] right-1" >
+              <ShoppingBagIcon className=" w-11"/>
+              <span className=" absolute text-gray-700 left-5 top-6 w-6 rounded-full bg-white">8</span>
+            </div>
+            </NavLink>
+          
      
      </div>
         
@@ -70,10 +74,7 @@ function NavTabs({ search, setSearch }) {
           <li className="link sm:mx-[-15px]">
             <NavLink to="/categories" className="text-2xl text-white px-2 m-1 rounded-xl sm:text-[18px] lg:pl-5 lg:text-xl"> All </NavLink>                       
           </li>
-          {/* Ramaz */}
-          <li className="link">
-            <NavLink to="/cart" className="text-2xl text-white px-2 m-1 rounded-xl">Shopping Cart</NavLink>                       
-          </li>
+          
         </ul>
     
       <div className="flex mx-auto  relative items-center mr-6">

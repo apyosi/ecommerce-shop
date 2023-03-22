@@ -8,7 +8,7 @@ const Categories = ({ categories, products }) => {
 
       {categories.map((category) => (
         <>
-          <section>
+          <section className="mt-[120px]">
             <div className="flex justify-between">
               <h2 className="text-4xl p-2">{category.toUpperCase()}</h2>
               <Link to={`/categories/${category}`}>

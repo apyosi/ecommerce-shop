@@ -4,38 +4,38 @@ import {FaFacebookSquare, FaLinkedin, FaInstagramSquare, FaTwitter, FaTiktok} fr
 const Footer = () => {
   const today = new Date();
   return (
-    <footer className="Footer text-center bg-dark text-light container-fluid flex-column pt-3">
-      <div className="text-center d-block bg-dark text-light container-fluid pt-3">
-     
-      
+    <footer className="Footer text-center bg-dark text-light container-fluid  py-3 ">
+      <div className="text-center flex md:flex-row justify-between flex-col-reverse bg-dark text-light container-fluid pt-3 items-center ">
+      <h3 className="text-1xl">Copyright &copy; {today.getFullYear()}</h3>
+       {/* Social Icons */}
       <div className="socialLinks x">
        <ul className="icons flex">
-        <li>
+        <li className="text-4xl md:mx-4">
           <Link to="https://instagram.com" aria-hidden="true" target="_blank" rel="noopener noreferrer">
            <FaInstagramSquare/>
          </Link>
         </li>
-        <li>
+        <li className="text-4xl md:mx-4">
           <Link to="https://www.facebook.com" aria-hidden="true" target="_blank" rel="noopener noreferrer">
             <FaFacebookSquare></FaFacebookSquare>
           </Link>
         </li>
-        <li>
+        <li className="text-4xl md:mx-4">
           <Link to="https://www.linkedin.com" aria-hidden="true"  target="_blank" rel="noopener noreferrer">
             <FaLinkedin/>
           </Link>
         </li>
-        <li>
+        <li className="text-4xl md:mx-4">
           <Link to="https://twitter.com" aria-hidden="true" target="_blank" rel="noopener noreferrer">
             <FaTwitter/>
           </Link>
         </li>
-        <li><Link to="https://tiktok.com" aria-hidden="true" rel="noopener noreferrer" target="_blank">
+        <li className="text-4xl md:mx-4"><Link to="https://tiktok.com" aria-hidden="true" rel="noopener noreferrer" target="_blank">
          <FaTiktok/>
         </Link></li>
        </ul>
      </div>
- <h3>Copyright &copy; {today.getFullYear()}</h3>
+    
       </div>
     </footer>
   );

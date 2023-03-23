@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { MenuIcon, SearchIcon, XIcon, ShoppingBagIcon} from '@heroicons/react/outline'
+import Cart from "../pages/Cart";
 
 function NavTabs({ search, setSearch }) {
   const[menu,setMenu] = useState(false)
+  const [ItemQty, setItemQty] = useState(localStorage.getItem('cartItemQty'));
 
   let menuBar
 
@@ -25,11 +27,7 @@ function NavTabs({ search, setSearch }) {
           <li className="border-b-2  border-zinc-300 w-full">
             <NavLink to="/categories" className="nav-link text-2xl text-white px-2 m-1" onClick={() => setMenu(!menu)}> All Products</NavLink>
           </li>
-          {/* Ramaz */}
-          <li className="border-b-2 border-zinc-300 w-full">
-            <NavLink to="/cart" className="nav-link text-2xl text-white px-2 m-1" onClick={() => setMenu(!menu)}>Cart</NavLink>
-          </li>
-
+          
         </ul>
       </div>
   }
@@ -51,7 +49,7 @@ function NavTabs({ search, setSearch }) {
             <NavLink to="/cart" className="text-2xl text-white px-2 m-1 rounded-xl">
             <div className="fixed text-white z-40 w-[80px] sm:right-[-20px] right-1" >
               <ShoppingBagIcon className=" w-11"/>
-              <span className=" absolute text-gray-700 left-5 top-6 w-6 rounded-full bg-white">8</span>
+              <span className=" absolute text-gray-700 left-5 top-6 w-6 rounded-full bg-white">{useState(ItemQty)}</span>
             </div>
             </NavLink>
           

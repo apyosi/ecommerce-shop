@@ -27,6 +27,14 @@ const Wrapper = ({ children }) => {
   return children;
 };
 
+// Cheking if Cart Data exist in LocalStorage
+if (!localStorage.getItem('cartInfo'))
+{
+  const cartData=JSON.parse(localStorage.getItem('cartInfo'));
+  console.log("start APP 34",cartData);
+} else {localStorage.setItem('cartInfo',JSON.stringify([]))};
+
+
 function App() {
 
 

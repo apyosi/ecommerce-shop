@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { Link, useParams } from "react-router-dom";
 // import { FaShoppingCart } from "react-icons/fa";
 // import { BsCart4 } from "react-icons/bs";
@@ -12,25 +12,68 @@ import {
   // AiOutlineStar,
 } from "react-icons/ai";
 import OtherProducts from "../components/OtherProducts";
+// const cartData=require('../cart.json');
+
+
+// useEffect(()=>{
+
+//   const cartData=JSON.parse(localStorage.getItem('cartInfo'))
+
+
+// },[])
 
 const Product = ({ products }) => {
+  
+const [cartData, setCartData] = useState(JSON.parse(localStorage.getItem('cartInfo')) || []);
+const [itemQty, setItemQty] = useState(1);
   const { id } = useParams();
   // console.log(id);
   // console.log(products);
   const product = products.find((item) => item.id.toString() === id);
-  console.log(product);
+  // let itemQty =1;
+  // console.log(product);
+  const handleItemIncrease = (item) =>{
+
+      // itemQty = itemQty+1;
+      //  console.log( itemQty);
+       setItemQty(itemQty => itemQty+1);
+        
+}
+const handleItemDecrease = (item) =>{
+
+    if (itemQty>0) {
+      setItemQty(itemQty => itemQty-1);
+    }
+
+}
   
   function getRatings()
   {
     setTimeout(() => {
       const starPercentageRounded = (product.rating/5)*100;
-      console.log(starPercentageRounded);
+      // console.log(starPercentageRounded);
       const el = document.querySelector(".stars-inner");
       el.style.width = Math.round(starPercentageRounded) +"%";
-      console.log(el);
+      // console.log(el);
     },0)
 
   }
+  const handleAddToCart = (cartItem) =>{
+    product.qty=itemQty;
+    cartData.push(product);
+     console.log("Product jsx-54",product);
+     console.log("Cart -Product jsx-54",cartData);
+     localStorage.setItem('cartInfo', JSON.stringify(cartData));
+    
+    // finding what is the position of the item that need to be removed
+
+    // let obj = cartData.find(x => x.id == cartItem.id);
+    // let index = cartData.indexOf(obj)
+    // // console.log(index);
+    // cartData.splice(index,1);
+    // console.log(cartData);
+    
+}
  
     // document.addEventListener('DOMContentLoaded',getRatings);
     // <script>
@@ -42,7 +85,7 @@ const Product = ({ products }) => {
     <>
       <main id="product">
         <hr />
-        <article className="mt-[120px]">
+        <article className="mt-[120px] ">
           {product && (
             <>
               <div className="w-[90%]  mx-auto flex flex-col-reverse gap-4 md:flex-row ">
@@ -132,7 +175,7 @@ const Product = ({ products }) => {
                           <table className="table table-striped">
                               <thead>
                                   <tr>
-                                    <th>Rating  {product.rating}</th>
+                                    <th>Rating  {Math.round(product.rating*10)/10}</th>
                                   </tr>
                               </thead>
                           <tbody>
@@ -177,37 +220,36 @@ const Product = ({ products }) => {
                         <b>Quantity:</b>
                       </p>
                       <p className="flex border border-solid border-gray-500">
-                        <span
-                          className="text-base py-3 px-3 cursor-pointer border-r border-solid border-gray-500 text-red-500"
-                          onClick=""
-                        >
-                          <AiOutlineMinus />
-                        </span>
-                        <span className="text-xl py-2 px-3 cursor-pointer">
-                          1
-                        </span>
-                        <span
-                          className="text-base py-3 px-3 cursor-pointer border-l border-solid border-gray-500 text-green-600"
-                          onClick=""
-                        >
-                          <AiOutlinePlus />
-                        </span>
+                      <button
+                          className="text-base py-3 px-3 cursor-pointer border-l border-solid border-gray-500 text-green-600" 
+                          onClick={()=>{
+                            // console.log(item);
+                            handleItemIncrease(product);
+                           }}> <AiOutlinePlus/> </button>
+                          
+                       
+                        <span className="text-xl py-2 px-3 cursor-pointer">{itemQty}</span>
+                        <button
+                          className="text-base py-3 px-3 cursor-pointer border-l border-solid border-gray-500 text-green-600" 
+                          onClick={()=>{
+                            // console.log(item);
+                            handleItemDecrease(product);
+                           }}><AiOutlineMinus/> </button>
+                      
                       </p>
                     </div>
                     {/* Ramaz */}
                     <div className="flex flex-row flex-wrap gap-2">
                       <button
                         className="w-60 justify-center text-2xl flex flex-row p-2 rounded-md bg-white text-purple-700 border-2 border-purple-700"
-                        type="button"
+                        type="button" onClick={()=>{
+                          // console.log(item);
+                          handleAddToCart(product);
+                          }}
                       >
                         Add to Cart
                       </button>
-                      <button
-                        className="w-60 justify-center text-2xl flex flex-row p-2 rounded-md bg-purple-700 text-white"
-                        type="button"
-                      >
-                        Buy now
-                      </button>
+                      
                     </div>
                   </div>
                 </div>

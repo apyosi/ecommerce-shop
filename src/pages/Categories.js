@@ -12,13 +12,11 @@ const Categories = ({ categories, products }) => {
       {categories.map((category) => (
         <>
           <section className="mt-[130px]">
-            <div className="flex justify-center items-center w-full h-96 text-slate-600">
-              <h2 className="text-3xl p-2">{category.toUpperCase()}</h2>
-              <div className="justify-self-end self-end place-self-end align-self-end self">
+            <div className="flex justify-center items-center text-slate-600">
+              <h2 className="text-3xl p-2">{category.toUpperCase()} ➡️</h2>
+              <div className="">
                 <Link to={`/categories/${category}`}>
-                  <p className=" text-2xl p-2 underline">
-                    All {category} products
-                  </p>
+                  <p className=" text-2xl p-2 underline">All products</p>
                 </Link>
               </div>
             </div>

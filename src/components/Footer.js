@@ -4,11 +4,11 @@ import {FaFacebookSquare, FaLinkedin, FaInstagramSquare, FaTwitter, FaTiktok} fr
 const Footer = () => {
   const today = new Date();
   return (
-    <footer className="Footer text-center bg-dark text-light container-fluid  py-3 ">
-      <div className="text-center flex md:flex-row justify-between flex-col-reverse bg-dark text-light container-fluid pt-3 items-center ">
+    <footer className="Footer text-center bg-purple-700 text-light container-fluid  py-3 ">
+      <div className="text-center flex md:flex-row justify-between flex-col-reverse bg-purple-600 text-light container-fluid pt-3 items-center ">
       <h3 className="text-1xl">Copyright &copy; {today.getFullYear()}</h3>
        {/* Social Icons */}
-      <div className="socialLinks x">
+      <div className="socialLinks md:mr-7">
        <ul className="icons flex">
         <li className="text-4xl md:mx-4">
           <Link to="https://instagram.com" aria-hidden="true" target="_blank" rel="noopener noreferrer">

@@ -10,19 +10,19 @@ function NavTabs({ search, setSearch }) {
   if(menu) {
     menuBar =  <div className="">
         <ul className="fixed w-full ml-[-10px]   mt-2 md:ml-[15px] bg-zinc-200  z-30">
-          <li className="border-b-2 border-zinc-300 w-full ">
+          <li className="border-b-2 border-zinc-300 w-full hover:bg-zinc-400 duration-300 ">
             <NavLink to="/" className="nav-link text-2xl text-white  px-2 m-1" onClick={() => setMenu(!menu)}> Home </NavLink>          
           </li>
-          <li className="border-b-2  border-zinc-300 w-full">
+          <li className="border-b-2  border-zinc-300 w-full hover:bg-zinc-400 duration-300">
             <NavLink to="/men" className="nav-link text-2xl  text-white px-2 m-1" onClick={() => setMenu(!menu)}>Men</NavLink>            
           </li>
-          <li className="border-b-2  border-zinc-300 w-full">
+          <li className="border-b-2  border-zinc-300 w-full hover:bg-zinc-400 duration-300">
             <NavLink to="/women" className="nav-link text-2xl text-white px-2 m-1" onClick={() => setMenu(!menu)}>Women</NavLink>                         
           </li>
-          <li className="border-b-2  border-zinc-300 w-full">
+          <li className="border-b-2  border-zinc-300 w-full hover:bg-zinc-400 duration-300">
             <NavLink to="/tech" className="nav-link text-2xl text-white px-2 m-1" onClick={() => setMenu(!menu)} >Tech </NavLink>                                   
           </li>
-          <li className="border-b-2  border-zinc-300 w-full">
+          <li className="border-b-2  border-zinc-300 w-full hover:bg-zinc-400 duration-300">
             <NavLink to="/categories" className="nav-link text-2xl text-white px-2 m-1" onClick={() => setMenu(!menu)}> All Products</NavLink>
           </li>
         </ul>

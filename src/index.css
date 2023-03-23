@@ -23,13 +23,6 @@ code {
   }
 }
 
-@layer components {
-  .link {
-    @apply
-    hover:underline
-  }
-}
-
 .active {
   background-color: indigo;
 }

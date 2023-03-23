@@ -9,6 +9,8 @@ function NavTabs({ search, setSearch }) {
 
   if(menu) {
     menuBar =  <div className="">
+
+    
         <ul className="fixed w-full ml-[-10px]   mt-2 md:ml-[15px] bg-zinc-200  z-30">
           <li className="border-b-2 border-zinc-300 w-full ">
             <NavLink to="/" className="nav-link text-2xl text-white  px-2 m-1" onClick={() => setMenu(!menu)}> Home </NavLink>          
@@ -35,7 +37,7 @@ function NavTabs({ search, setSearch }) {
      <div className="flex mx-auto p-3 items-center justify-evently">
       <div className="sm:mx-[-110px]" >
         <Link to="/">
-        <h1 className=" text-4xl text-white lg:text-4xl md:text-3xl px-5 ">ShopAddict</h1>
+        <h1 className=" text-4xl text-white lg:text-4xl md:text-3xl px-5 ">Style Savant</h1>
         </Link>
       </div>
       <div className="fixed left-7 md:hidden text-white w-[80px]" onClick={() => setMenu(!menu)}>

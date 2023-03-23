@@ -7,8 +7,8 @@ const Category = ({ products }) => {
 
   return (
     <>
-      <section>
-        <div className="flex justify-between">
+      <section className="mt-[130px]">
+        <div className="flex justify-center">
           <h2 className="text-4xl p-2">{id.toUpperCase()}</h2>
         </div>
         <hr />

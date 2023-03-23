@@ -73,21 +73,21 @@ const Product = ({ products }) => {
                       >
                         <img
                           src={product.images[0]}
-                          className="d-block w-100 h-[600] object-cover"
+                          className="d-block bg-white w-full h-[600px] object-contain"
                           alt="..."
                         />
                       </div>
                       <div className="carousel-item" data-bs-interval="2000">
                         <img
                           src={product.images[1]}
-                          className="d-block w-100 h-[600] object-cover"
+                          className="d-block bg-white w-full h-[600px] object-contain"
                           alt="..."
                         />
                       </div>
                       <div className="carousel-item" data-bs-interval="2000">
                         <img
                           src={product.images[2]}
-                          className="d-block w-100 h-[600] object-cover"
+                          className="d-block bg-white w-full h-[600px] object-contain"
                           alt="..."
                         />
                       </div>

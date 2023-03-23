@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 // import { FaShoppingCart } from "react-icons/fa";
 // import { BsCart4 } from "react-icons/bs";
 import { SlArrowLeft } from "react-icons/sl";
-import "../assets/css/style.css";
+import "../assets/css/style.css"
 import { SlArrowRight } from "react-icons/sl";
 import {
   AiOutlineMinus,
@@ -19,21 +19,24 @@ const Product = ({ products }) => {
   // console.log(products);
   const product = products.find((item) => item.id.toString() === id);
   console.log(product);
-
-  function getRatings() {
+  
+  function getRatings()
+  {
     setTimeout(() => {
-      const starPercentageRounded = (product.rating / 5) * 100;
+      const starPercentageRounded = (product.rating/5)*100;
       console.log(starPercentageRounded);
       const el = document.querySelector(".stars-inner");
-      el.style.width = Math.round(starPercentageRounded) + "%";
+      el.style.width = Math.round(starPercentageRounded) +"%";
       console.log(el);
-    }, 0);
-  }
+    },0)
 
-  // document.addEventListener('DOMContentLoaded',getRatings);
-  // <script>
-  // document.addEventListener('DOMContentLoaded',getRatings);
-  // </script>
+  }
+ 
+    // document.addEventListener('DOMContentLoaded',getRatings);
+    // <script>
+    // document.addEventListener('DOMContentLoaded',getRatings);
+    // </script>
+  
 
   return (
     <>
@@ -43,7 +46,7 @@ const Product = ({ products }) => {
           {product && (
             <>
               <div className="w-[90%]  mx-auto flex flex-col-reverse gap-4 md:flex-row ">
-                <div id="images" className="w-full md:w-1/2">
+                <div id="images" className="w-full  flex items-center justify-center  md:w-1/2">
                   {/* <div className="all-images">
                       <img
                         src={product.images[0]}
@@ -63,65 +66,66 @@ const Product = ({ products }) => {
                     </div> */}
                   <div
                     id="carouselExampleInterval"
-                    className="carousel slide"
+                    className="carousel slide "
                     data-bs-ride="carousel"
                   >
-                    <div className="carousel-inner">
+                    <div className=" carousel-inner w-80">
                       <div
                         className="carousel-item active"
                         data-bs-interval="2000"
                       >
                         <img
                           src={product.images[0]}
-                          className="d-block w-100 h-[600] object-cover"
+                          className="d-block w-96 h-[500px] object-cover"
                           alt="..."
                         />
                       </div>
                       <div className="carousel-item" data-bs-interval="2000">
                         <img
                           src={product.images[1]}
-                          className="d-block w-100 h-[600] object-cover"
+                          className="d-block w-96 h-[500px] object-cover"
                           alt="..."
                         />
                       </div>
                       <div className="carousel-item" data-bs-interval="2000">
                         <img
                           src={product.images[2]}
-                          className="d-block w-100 h-[600] object-cover"
+                          className="d-block w-96 h-[500px] object-cover"
                           alt="..."
                         />
                       </div>
                     </div>
+                   
                     <button
-                      className="carousel-control-prev"
+                      className=" left-[-50px] md:left-[-60px] carousel-control-prev"
                       type="button"
                       data-bs-target="#carouselExampleInterval"
                       data-bs-slide="prev"
                     >
                       <span
-                        className="text-purple-600 text-4xl"
+                        className="text-purple-600  text-5xl"
                         aria-hidden="true"
-                      >
-                        <SlArrowLeft></SlArrowLeft>
-                      </span>
+                      ><SlArrowLeft></SlArrowLeft></span>
                       <span className="visually-hidden">Previous</span>
                     </button>
                     <button
-                      className="carousel-control-next"
+                      className="left-[320px] md:left-[330px] carousel-control-next"
                       type="button"
                       data-bs-target="#carouselExampleInterval"
                       data-bs-slide="next"
                     >
                       <span
-                        className="text-purple-600 text-4xl"
+                        className="text-purple-600 text-5xl"
                         aria-hidden="true"
-                      >
-                        <SlArrowRight></SlArrowRight>
-                      </span>
+                      ><SlArrowRight></SlArrowRight></span>
                       <span className="visually-hidden">Next</span>
                     </button>
                   </div>
                 </div>
+
+
+
+
                 <div id="details" className="w-full md:w-1/2">
                   <div className="flex flex-col gap-4 text-start ">
                     <h1 className="text-4xl">{product.title}</h1>
@@ -131,26 +135,25 @@ const Product = ({ products }) => {
 
                         <div className="container">
                           <table className="table table-striped">
-                            <thead>
-                              <tr>
-                                <th>Rating {product.rating}</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
+                              <thead>
+                                  <tr>
+                                    <th>Rating  {product.rating}</th>
+                                  </tr>
+                              </thead>
+                          <tbody>
+                            <tr>
+                              <td>
                                   <div className="stars-outer">
-                                    <div
-                                      id="toni"
-                                      className="stars-inner"
-                                    ></div>
-                                  </div>
+                                    <div id="toni" className="stars-inner"></div> 
+                                  </div> 
                                   <span className="number-rating"></span>
-                                </td>
-                              </tr>
-                            </tbody>
+                              </td>
+                            </tr>
+                          </tbody>
                           </table>
+                          
                         </div>
+
 
                         {/* <AiFillStar />
                         <AiFillStar />
@@ -172,7 +175,7 @@ const Product = ({ products }) => {
                       <b>Category:</b> {product.category}
                     </p>
                     <p className="text-3xl font-bold text-red-600">
-                      ${product.price}
+                      £{product.price}
                     </p>
                     <div className="flex align-items-center gap-2">
                       <p>
@@ -228,7 +231,10 @@ const Product = ({ products }) => {
         </article>
       </main>
       <section>
-        <OtherProducts products={products} product={product} />
+        <OtherProducts
+          products={products}
+          product={product}
+        />
       </section>
       {getRatings()}
     </>

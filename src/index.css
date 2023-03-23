@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -16,46 +16,32 @@ code {
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   li {
-    @apply p-4
+    @apply p-4;
   }
 }
 
-@layer components {
-  .link {
-    @apply
-    hover:underline
-  }
-}
 
 .active {
   background-color: indigo;
 }
 
-.alice-carousel__dots > li:nth-child(n+5) {
-  display: none;
-}
-
-.product-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
+.alice-carousel {
+  position: relative;
 }
 
 .alice-carousel__prev-btn-item {
-  position: relative;
-right: 25%;
-  
+  position: absolute;
+  top: 190px;
+  left: 0px;
+  font-size: 3rem;
 }
 
 .alice-carousel__next-btn-item {
-
-  position: relative;
-  right: 25%;
+  font-size: 3rem;
+  position: absolute;
+  top: 190px;
+  right: 0px;
+  font-size: 3rem;
 }
-
-
-
-

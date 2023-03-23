@@ -1,70 +1,142 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+<a id="readme-top"></a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<div align="center">
+<h1 align="center">Online eCommerce website - ShopAddict </h1>
+<a href="https://github.com/apyosi/ecommerce-shop/graphs/contributors"><img src="https://img.shields.io/github/contributors/apyosi/ecommerce-shop.svg?style=for-the-badge" alt=""></a>
+<a href="https://github.com/apyosi/ecommerce-shop/network/members"><img src="https://img.shields.io/github/forks/apyosi/ecommerce-shop.svg?style=for-the-badge" alt=""></a>
+<a href="https://github.com/apyosi/ecommerce-shop/stargazers"><img src="https://img.shields.io/github/stars/apyosi/ecommerce-shop.svg?style=for-the-badge" alt=""></a>
+<a href="https://github.com/apyosi/ecommerce-shop/issues"><img src="https://img.shields.io/github/issues/apyosi/ecommerce-shop.svg?style=for-the-badge" alt=""></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt=""></a>
+</div>
+<details open>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#tests">Tests</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#questions">Questions</a></li>
+  </ol>
+</details>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h2 id="description">🧾 Description</h2>
+
+Build and Deploy a fully responsive Modern Full Stack Ecommerce application
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<h2 id="description">🛠️ Built with</h2>
+
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" /></a>
+<a href="https://github.com/apyosi" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/postcss-DD3A0A?style=for-the-badge&logo=postcss&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/Firefox_Browser-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&logo=Microsoft-edge&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/Safari-FF1B2D?style=for-the-badge&logo=Safari&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white" /></a>
+<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/Zoom-2D8CFF?style=for-the-badge&logo=zoom&logoColor=white" /></a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<h2 id="installation">💾 Installation</h2>
+
+Clone the repository: `git@github.com:apyosi/ecommerce-shop.git`
+
+Navigate in the folder: `cd ecommerce-shop`
+
+Install all the required dependencies:  `npm install`
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<h2 id="usage">▶️ Usage</h2>
+
+In the project directory, run in cli the following command: ```npm start```
+
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser.
+
+The page will reload when you make changes.
+ You may also see any lint errors in the console.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<h2 id="contributing">🧑🏻‍🔧 Contributing</h2>
+
+Contributions are always welcome!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<h2 id="tests">🧪 Tests</h2>
+
+To run the test, run the following command: 
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
+ See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder.
+ It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The build is minified and the filenames include the hashes.
+ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<h2 id="license">🔍 License</h2>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt=""></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<h2 id="license">🫂 Authors</h2>
 
-## Learn More
+[apyosi](https://github.com/apyosi)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[KodeIva](https://github.com/KodeIva)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[RobH95](https://github.com/RobH95)
 
-### Code Splitting
+[Ramaz-Didi](https://github.com/Ramaz-Didi)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Analyzing the Bundle Size
+<h2 id="questions">❓ Questions</h2>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+You can reach us for any questions on the github repo page: [https://github.com/apyosi/ecommerce-shop](https://github.com/apyosi/ecommerce-shop)
 
-### Making a Progressive Web App
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

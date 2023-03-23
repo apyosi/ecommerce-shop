@@ -23,16 +23,20 @@ const Categories = ({ categories, products }) => {
             <hr className="line" />
             <div className="flex flex-wrap justify-center">
               <AliceCarousel
+                // autoPlay="true"
+                // autoPlayInterval={2000}
+                // autoPlayDirection="ltr"
+                // autoPlayStrategy= "default"
+                controlsStrategy="responsive"
+                // disableButtonsControls
+                disableDotsControls
+                // disableSlideInfo
+                infinite
+                // keyboardNavigation
                 mouseTracking
-                // autoPlayInterval={3000}
-                // autoPlayStrategy= ""
-                // autoPlayDirection="rtl"
-                // autoPlay={true}
-                controlsStrategy="alternate"
-                // controlsStrategy="responsive"
                 // fadeOutAnimation={true}
                 // mouseDragEnabled={true}
-                dotsDisabled={true}
+                // dotsDisabled={true}
                 // dotsClass="alice-carousel__dots" // Use dotsClass to target dots with CSS
                 responsive={{
                   0: { items: 1 },
@@ -41,6 +45,10 @@ const Categories = ({ categories, products }) => {
                   1280: { items: 4 },
                   // 1536: { items: 5 },
                 }}
+                swipeDelta
+                swipeExtraPadding
+                touchTracking
+                touchMoveDefaultEvents
                 className="w-full"
               >
                 {products

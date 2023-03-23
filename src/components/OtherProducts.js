@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Card from "./Cards";
+import Card from "./Card";
 
 const OtherProducts = ({ products, product }) => {
   return (

@@ -15,7 +15,7 @@ import "./App.css";
 import Categories from "./pages/Categories";
 import Category from "./pages/Category";
 import Search from "./pages/Search";
-import Cart from './pages/Cart';
+import Cart from "./pages/Cart";
 import cartData from "../src/cart.json";
 import ScrollBtn from "./components/ScrollBtn";
 
@@ -28,8 +28,6 @@ const Wrapper = ({ children }) => {
 };
 
 function App() {
-
-
   const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [categories, setCategories] = useState([
@@ -58,10 +56,12 @@ function App() {
   const [cartData, setCartData] = useState(database);
 
   useEffect(() => {
-    /*     const fetchProducts = async () => {
+    const fetchProducts = async () => {
       try {
         // const response = await fetch("https://dummyjson.com/products/");
-        const response = await fetch("https://dummyjson.com/products?limit=100");
+        const response = await fetch(
+          "https://dummyjson.com/products?limit=100"
+        );
         const data = await response.json();
         // console.log(data);
         setProducts(data.products);
@@ -69,7 +69,7 @@ function App() {
         console.log(err);
       }
     };
-    fetchProducts(); */
+    fetchProducts();
 
     console.log(search);
     const filteredResults = products.filter(
@@ -155,24 +155,26 @@ function App() {
                 <Route path=":id" element={<Product products={products} />} />
               </Route>
 
-            <Route path="categories">
-              <Route
-                index
-                element={
-                  <Categories categories={categories} products={products} />
-                }
-              />
-              <Route path=":id" element={<Category products={products} />} />
-              <Route path=":id/:id" element={<Product products={products} />} />
-              <Route
-                path=":id/:id/:id"
-                element={<Product products={products} />}
-              />
-            </Route>
-            {/* Ramaz */}
-                       
+              <Route path="categories">
+                <Route
+                  index
+                  element={
+                    <Categories categories={categories} products={products} />
+                  }
+                />
+                <Route path=":id" element={<Category products={products} />} />
+                <Route
+                  path=":id/:id"
+                  element={<Product products={products} />}
+                />
+                <Route
+                  path=":id/:id/:id"
+                  element={<Product products={products} />}
+                />
+              </Route>
+              {/* Ramaz */}
+
               <Route path="/cart" element={<Cart />} />
-                   
 
               {/* <Route path="search" element={<Search categories={categories} products={products} />} /> */}
               <Route path="*" element={<NotFound />} />

@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 // import { FaShoppingCart } from "react-icons/fa";
 // import { BsCart4 } from "react-icons/bs";
 import { SlArrowLeft } from "react-icons/sl";
-import "../assets/css/style.css"
+import "../assets/css/style.css";
 import { SlArrowRight } from "react-icons/sl";
 import {
   AiOutlineMinus,
@@ -19,24 +19,21 @@ const Product = ({ products }) => {
   // console.log(products);
   const product = products.find((item) => item.id.toString() === id);
   console.log(product);
-  
-  function getRatings()
-  {
+
+  function getRatings() {
     setTimeout(() => {
-      const starPercentageRounded = (product.rating/5)*100;
+      const starPercentageRounded = (product.rating / 5) * 100;
       console.log(starPercentageRounded);
       const el = document.querySelector(".stars-inner");
-      el.style.width = Math.round(starPercentageRounded) +"%";
+      el.style.width = Math.round(starPercentageRounded) + "%";
       console.log(el);
-    },0)
-
+    }, 0);
   }
- 
-    // document.addEventListener('DOMContentLoaded',getRatings);
-    // <script>
-    // document.addEventListener('DOMContentLoaded',getRatings);
-    // </script>
-  
+
+  // document.addEventListener('DOMContentLoaded',getRatings);
+  // <script>
+  // document.addEventListener('DOMContentLoaded',getRatings);
+  // </script>
 
   return (
     <>
@@ -104,7 +101,9 @@ const Product = ({ products }) => {
                       <span
                         className="text-purple-600 text-4xl"
                         aria-hidden="true"
-                      ><SlArrowLeft></SlArrowLeft></span>
+                      >
+                        <SlArrowLeft></SlArrowLeft>
+                      </span>
                       <span className="visually-hidden">Previous</span>
                     </button>
                     <button
@@ -116,7 +115,9 @@ const Product = ({ products }) => {
                       <span
                         className="text-purple-600 text-4xl"
                         aria-hidden="true"
-                      ><SlArrowRight></SlArrowRight></span>
+                      >
+                        <SlArrowRight></SlArrowRight>
+                      </span>
                       <span className="visually-hidden">Next</span>
                     </button>
                   </div>
@@ -130,25 +131,26 @@ const Product = ({ products }) => {
 
                         <div className="container">
                           <table className="table table-striped">
-                              <thead>
-                                  <tr>
-                                    <th>Rating  {product.rating}</th>
-                                  </tr>
-                              </thead>
-                          <tbody>
-                            <tr>
-                              <td>
+                            <thead>
+                              <tr>
+                                <th>Rating {product.rating}</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
                                   <div className="stars-outer">
-                                    <div id="toni" className="stars-inner"></div> 
-                                  </div> 
+                                    <div
+                                      id="toni"
+                                      className="stars-inner"
+                                    ></div>
+                                  </div>
                                   <span className="number-rating"></span>
-                              </td>
-                            </tr>
-                          </tbody>
+                                </td>
+                              </tr>
+                            </tbody>
                           </table>
-                          
                         </div>
-
 
                         {/* <AiFillStar />
                         <AiFillStar />
@@ -226,10 +228,7 @@ const Product = ({ products }) => {
         </article>
       </main>
       <section>
-        <OtherProducts
-          products={products}
-          product={product}
-        />
+        <OtherProducts products={products} product={product} />
       </section>
       {getRatings()}
     </>

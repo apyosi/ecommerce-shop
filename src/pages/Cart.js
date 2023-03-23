@@ -51,7 +51,7 @@ const Cart = ({cart, setCart}) => {
   return (
     // <h1>sdgbnsngfs</h1>
 
-    <article>
+    <article id="cart">
         {
             cartData?.map((item)=>(
                 <div className="cart_box" key={item.id}>

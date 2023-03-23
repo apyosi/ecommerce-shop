@@ -39,7 +39,7 @@ code {
 .alice-carousel__prev-btn-item {
   position: absolute;
   top: 190px;
-  left: 10px;
+  left: 0px;
   font-size: 3rem;
 }
 
@@ -47,6 +47,6 @@ code {
   font-size: 3rem;
   position: absolute;
   top: 190px;
-  right: 10px;
+  right: 0px;
   font-size: 3rem;
 }

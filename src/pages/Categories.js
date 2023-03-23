@@ -23,16 +23,16 @@ const Categories = ({ categories, products }) => {
             <hr className="line" />
             <div className="flex flex-wrap justify-center">
               <AliceCarousel
-                autoPlay="true"
-                autoPlayInterval={2000}
-                autoPlayDirection="ltr"
-                autoPlayStrategy= "default"
+                // autoPlay="true"
+                // autoPlayInterval={2000}
+                // autoPlayDirection="ltr"
+                // autoPlayStrategy= "default"
                 controlsStrategy="responsive"
                 // disableButtonsControls
                 disableDotsControls
                 // disableSlideInfo
                 infinite
-                keyboardNavigation="true"
+                // keyboardNavigation
                 mouseTracking
                 // fadeOutAnimation={true}
                 // mouseDragEnabled={true}
@@ -43,7 +43,7 @@ const Categories = ({ categories, products }) => {
                   768: { items: 2 },
                   1024: { items: 3 },
                   1280: { items: 4 },
-                  1936: { items: 5 },
+                  // 1536: { items: 5 },
                 }}
                 swipeDelta
                 swipeExtraPadding

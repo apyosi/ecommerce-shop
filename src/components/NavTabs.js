@@ -12,22 +12,21 @@ function NavTabs({ search, setSearch }) {
   if(menu) {
     menuBar =  <div className="">
         <ul className="fixed w-full ml-[-10px]   mt-2 md:ml-[15px] bg-zinc-200  z-30">
-          <li className="border-b-2 border-zinc-300 w-full ">
+          <li className="border-b-2 border-zinc-300 w-full hover:bg-zinc-400 duration-300 ">
             <NavLink to="/" className="nav-link text-2xl text-white  px-2 m-1" onClick={() => setMenu(!menu)}> Home </NavLink>          
           </li>
-          <li className="border-b-2  border-zinc-300 w-full">
+          <li className="border-b-2  border-zinc-300 w-full hover:bg-zinc-400 duration-300">
             <NavLink to="/men" className="nav-link text-2xl  text-white px-2 m-1" onClick={() => setMenu(!menu)}>Men</NavLink>            
           </li>
-          <li className="border-b-2  border-zinc-300 w-full">
+          <li className="border-b-2  border-zinc-300 w-full hover:bg-zinc-400 duration-300">
             <NavLink to="/women" className="nav-link text-2xl text-white px-2 m-1" onClick={() => setMenu(!menu)}>Women</NavLink>                         
           </li>
-          <li className="border-b-2  border-zinc-300 w-full">
+          <li className="border-b-2  border-zinc-300 w-full hover:bg-zinc-400 duration-300">
             <NavLink to="/tech" className="nav-link text-2xl text-white px-2 m-1" onClick={() => setMenu(!menu)} >Tech </NavLink>                                   
           </li>
-          <li className="border-b-2  border-zinc-300 w-full">
+          <li className="border-b-2  border-zinc-300 w-full hover:bg-zinc-400 duration-300">
             <NavLink to="/categories" className="nav-link text-2xl text-white px-2 m-1" onClick={() => setMenu(!menu)}> All Products</NavLink>
           </li>
-          
         </ul>
       </div>
   }
@@ -45,39 +44,36 @@ function NavTabs({ search, setSearch }) {
         {!menu ? <MenuIcon className="w-11" /> : <XIcon className="w-11"  />}
       </div> 
           
-
-            <NavLink to="/cart" className="text-2xl text-white px-2 m-1 rounded-xl">
-            <div className="fixed text-white z-40 w-[80px] sm:right-[-20px] right-1" >
-              <ShoppingBagIcon className=" w-11"/>
-              <span className=" absolute text-gray-700 left-5 top-6 w-6 rounded-full bg-white">{useState(ItemQty)}</span>
-            </div>
-            </NavLink>
-          
+      <div className="fixed text-white z-40 w-[80px] sm:right-[-20px] right-1" >
+          <NavLink to="/cart">
+            <ShoppingBagIcon className=" w-11"/>
+            <span className=" absolute text-gray-700 left-5 top-6 w-6 rounded-full bg-white">8</span>
+          </NavLink>  
+      </div>
      
      </div>
         
         <ul className="hidden lg:items-center md:flex sm:items-center ">
-          <li className="link sm:mx-[-15px]">
-            <NavLink to="/" className="text-2xl text-white px-2 m-1 rounded-xl sm:text-[18px] lg:pl-5 lg:text-xl " >  Home</NavLink>
+          <li className="link sm:mx-[-15px] ">
+            <NavLink to="/" className="text-2xl text-white px-2 m-1 sm:text-[18px] lg:pl-5 lg:text-xl hover:border-b-2 duration-300" >  Home</NavLink>
           </li>
           <li className="link sm:mx-[-15px]">
-            <NavLink to="/men"  className=" text-2xl text-white px-2 m-1 rounded-xl sm:text-[18px] lg:pl-5 lg:text-xl">Men</NavLink>
+            <NavLink to="/men"  className=" text-2xl text-white px-2 m-1 sm:text-[18px] lg:pl-5 lg:text-xl hover:border-b-2 duration-300">Men</NavLink>
           </li>
           <li className="link sm:mx-[-15px]">
-            <NavLink to="/women" className="text-2xl text-white px-2 m-1 rounded-xl sm:text-[18px] lg:pl-5 lg:text-xl">Women</NavLink>
+            <NavLink to="/women" className="text-2xl text-white px-2 m-1 sm:text-[18px] lg:pl-5 lg:text-xl hover:border-b-2 duration-300">Women</NavLink>
           </li>
           <li className="link sm:mx-[-15px]">
-            <NavLink to="/tech" className=" text-2xl text-white px-2 m-1 rounded-xl sm:text-[18px] lg:pl-5 lg:text-xl"> Tech</NavLink>            
+            <NavLink to="/tech" className=" text-2xl text-white px-2 m-1 sm:text-[18px] lg:pl-5 lg:text-xl hover:border-b-2 duration-300"> Tech</NavLink>            
           </li>
           <li className="link sm:mx-[-15px]">
-            <NavLink to="/categories" className="text-2xl text-white px-2 m-1 rounded-xl sm:text-[18px] lg:pl-5 lg:text-xl"> All </NavLink>                       
+            <NavLink to="/categories" className="text-2xl text-white px-2 m-1 sm:text-[18px] lg:pl-5 lg:text-xl hover:border-b-2 duration-300"> All </NavLink>                       
           </li>
-          
         </ul>
     
       <div className="flex mx-auto  relative items-center mr-6">
         <form className="searchForm" onSubmit={(e) => e.preventDefault()}>
-          {/* <label htmlFor="search">Search Products</label> */}
+         
           <input
             className="w-[350px] lg:w-60  md:w-[80%]  h-9 p-2  rounded-xl"
             id="search"

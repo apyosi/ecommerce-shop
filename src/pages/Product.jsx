@@ -89,7 +89,7 @@ const handleItemDecrease = (item) =>{
           {product && (
             <>
               <div className="w-[90%]  mx-auto flex flex-col-reverse gap-4 md:flex-row ">
-                <div id="images" className="w-full md:w-1/2">
+                <div id="images" className="w-full  flex items-center justify-center  md:w-1/2">
                   {/* <div className="all-images">
                       <img
                         src={product.images[0]}
@@ -109,61 +109,66 @@ const handleItemDecrease = (item) =>{
                     </div> */}
                   <div
                     id="carouselExampleInterval"
-                    className="carousel slide"
+                    className="carousel slide "
                     data-bs-ride="carousel"
                   >
-                    <div className="carousel-inner">
+                    <div className=" carousel-inner w-80">
                       <div
                         className="carousel-item active"
                         data-bs-interval="2000"
                       >
                         <img
                           src={product.images[0]}
-                          className="d-block w-100 h-[600] object-cover"
+                          className="d-block bg-white w-full h-[600px] object-contain"
                           alt="..."
                         />
                       </div>
                       <div className="carousel-item" data-bs-interval="2000">
                         <img
                           src={product.images[1]}
-                          className="d-block w-100 h-[600] object-cover"
+                          className="d-block bg-white w-full h-[600px] object-contain"
                           alt="..."
                         />
                       </div>
                       <div className="carousel-item" data-bs-interval="2000">
                         <img
                           src={product.images[2]}
-                          className="d-block w-100 h-[600] object-cover"
+                          className="d-block bg-white w-full h-[600px] object-contain"
                           alt="..."
                         />
                       </div>
                     </div>
+                   
                     <button
-                      className="carousel-control-prev"
+                      className=" left-[-50px] md:left-[-60px] carousel-control-prev"
                       type="button"
                       data-bs-target="#carouselExampleInterval"
                       data-bs-slide="prev"
                     >
                       <span
-                        className="text-purple-600 text-4xl"
+                        className="text-purple-600  text-5xl"
                         aria-hidden="true"
                       ><SlArrowLeft></SlArrowLeft></span>
                       <span className="visually-hidden">Previous</span>
                     </button>
                     <button
-                      className="carousel-control-next"
+                      className="left-[320px] md:left-[330px] carousel-control-next"
                       type="button"
                       data-bs-target="#carouselExampleInterval"
                       data-bs-slide="next"
                     >
                       <span
-                        className="text-purple-600 text-4xl"
+                        className="text-purple-600 text-5xl"
                         aria-hidden="true"
                       ><SlArrowRight></SlArrowRight></span>
                       <span className="visually-hidden">Next</span>
                     </button>
                   </div>
                 </div>
+
+
+
+
                 <div id="details" className="w-full md:w-1/2">
                   <div className="flex flex-col gap-4 text-start ">
                     <h1 className="text-4xl">{product.title}</h1>
@@ -213,7 +218,7 @@ const handleItemDecrease = (item) =>{
                       <b>Category:</b> {product.category}
                     </p>
                     <p className="text-3xl font-bold text-red-600">
-                      ${product.price}
+                      £{product.price}
                     </p>
                     <div className="flex align-items-center gap-2">
                       <p>

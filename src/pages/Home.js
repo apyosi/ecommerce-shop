@@ -15,7 +15,7 @@ function Home({ products, categories }) {
 
   return (
     <main id="home" className="container mx-auto mb-8 px-4 mt-[140px] md:mt-[110px]">
-      <h2 className="text-3xl font-bold mb-4">Best Selling Products</h2>
+      <h2 className="text-3xl font-bold mb-4">Best Seller Products</h2>
       <hr className="mb-8" />
       <AliceCarousel
         // autoPlay="true"

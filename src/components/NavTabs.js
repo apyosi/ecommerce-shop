@@ -47,7 +47,7 @@ function NavTabs({ search, setSearch }) {
       <div className="fixed text-white z-40 w-[80px] sm:right-[-20px] right-1" >
           <NavLink to="/cart">
             <ShoppingBagIcon className=" w-11"/>
-            <span className=" absolute text-gray-700 left-5 top-6 w-6 rounded-full bg-white">8</span>
+            <span className=" absolute text-gray-700 left-5 top-6 w-6 rounded-full bg-white">0</span>
           </NavLink>  
       </div>
      

@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Cards from "../components/Cards";
 import CartList from "./CartList";
+import { Link } from "react-router-dom";
 import "../assets/css/cart.css";
 // const cartData=require('../cart.json');
 // const fs = require('fs')
@@ -122,7 +123,8 @@ const Cart = ({ cart, setCart }) => {
         <span>Total: &nbsp; </span>
         <span> £{price}</span>
       </div>
-          <button className="w-[300px]  text-2xl font-bold p-3 m-10 bg-red-500 rounded-lg text-white">Buy now</button>
+              <Link to="/order-complete"><button className="w-[300px]  text-2xl font-bold p-3 m-10 bg-red-500 rounded-lg text-white">Buy now</button></Link>
+          
     </article>
   );
 };

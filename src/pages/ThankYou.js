@@ -16,7 +16,7 @@ function Products({ products }) {
       >
         <div className="container">
           <div className="success-wrapper">
-            <div className="flex flex-col justify-center align-content-center h-[600px]">
+            <div className="flex flex-col justify-center align-content-center h-[600px] shadow-xl">
               <h2 className="text-5xl mb-10">Thank you for your order!</h2>
               <p className="text-3xl mb-5">
                 Check your email inbox for the receipt.
@@ -31,7 +31,7 @@ function Products({ products }) {
                 <button
                   type="button"
                   width="300px"
-                  className="p-4 mb-[200px] bg-yellow-400 text-3xl border-0 shadow-xl"
+                  className="p-4 mb-[200px] bg-yellow-400 text-3xl border-0  shadow-xl"
                 >
                   Continue Shopping
                 </button>

@@ -8,7 +8,7 @@ import {
 import database from "./data.json";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
-import Products from "./pages/Products";
+import Thanks from "./pages/ThankYou";
 import Product from "./pages/Product";
 import NotFound from "./pages/NotFound";
 import "./App.css";
@@ -100,7 +100,7 @@ function App() {
               <Route
                 index
                 element={
-                  <Home categories={categories} products={searchResults} />
+                  <Home categories={categories} products={products} />
                 }
               ></Route>
               <Route path=":id/:id" element={<Product products={products} />} />
@@ -158,8 +158,8 @@ function App() {
                 />
               </Route>
 
-              <Route path="products">
-                <Route index element={<Products products={products} />} />
+              <Route path="order-complete">
+                <Route index element={<Thanks products={products} />} />
                 <Route path=":id" element={<Product products={products} />} />
               </Route>
 
@@ -184,7 +184,7 @@ function App() {
 
               <Route path="/cart" element={<Cart />} />
 
-              {/* <Route path="search" element={<Search categories={categories} products={products} />} /> */}
+              <Route path="/search" element={<Search categories={categories} products={searchResults} />} />
               <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>

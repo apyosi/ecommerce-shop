@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import { Link, useParams } from "react-router-dom";
 // import { FaShoppingCart } from "react-icons/fa";
 // import { BsCart4 } from "react-icons/bs";
 import { SlArrowLeft } from "react-icons/sl";
-import "../assets/css/style.css";
+import "../assets/css/style.css"
 import { SlArrowRight } from "react-icons/sl";
 import {
   AiOutlineMinus,
@@ -14,50 +14,57 @@ import {
 import OtherProducts from "../components/OtherProducts";
 // const cartData=require('../cart.json');
 
+
 // useEffect(()=>{
 
 //   const cartData=JSON.parse(localStorage.getItem('cartInfo'))
 
+
 // },[])
 
 const Product = ({ products }) => {
-  const [cartData, setCartData] = useState(
-    JSON.parse(localStorage.getItem("cartInfo")) || []
-  );
-  const [itemQty, setItemQty] = useState(1);
+  
+const [cartData, setCartData] = useState(JSON.parse(localStorage.getItem('cartInfo')) || []);
+const [itemQty, setItemQty] = useState(1);
   const { id } = useParams();
   // console.log(id);
   // console.log(products);
   const product = products.find((item) => item.id.toString() === id);
   // let itemQty =1;
   // console.log(product);
-  const handleItemIncrease = (item) => {
-    // itemQty = itemQty+1;
-    //  console.log( itemQty);
-    setItemQty((itemQty) => itemQty + 1);
-  };
-  const handleItemDecrease = (item) => {
-    if (itemQty > 0) {
-      setItemQty((itemQty) => itemQty - 1);
-    }
-  };
+  const handleItemIncrease = (item) =>{
 
-  function getRatings() {
+      // itemQty = itemQty+1;
+      //  console.log( itemQty);
+       setItemQty(itemQty => itemQty+1);
+        
+}
+const handleItemDecrease = (item) =>{
+
+    if (itemQty>0) {
+      setItemQty(itemQty => itemQty-1);
+    }
+
+}
+  
+  function getRatings()
+  {
     setTimeout(() => {
-      const starPercentageRounded = (product.rating / 5) * 100;
+      const starPercentageRounded = (product.rating/5)*100;
       // console.log(starPercentageRounded);
       const el = document.querySelector(".stars-inner");
-      el.style.width = Math.round(starPercentageRounded) + "%";
+      el.style.width = Math.round(starPercentageRounded) +"%";
       // console.log(el);
-    }, 0);
-  }
-  const handleAddToCart = (cartItem) => {
-    product.qty = itemQty;
-    cartData.push(product);
-    console.log("Product jsx-54", product);
-    console.log("Cart -Product jsx-54", cartData);
-    localStorage.setItem("cartInfo", JSON.stringify(cartData));
+    },0)
 
+  }
+  const handleAddToCart = (cartItem) =>{
+    product.qty=itemQty;
+    cartData.push(product);
+     console.log("Product jsx-54",product);
+     console.log("Cart -Product jsx-54",cartData);
+     localStorage.setItem('cartInfo', JSON.stringify(cartData));
+    
     // finding what is the position of the item that need to be removed
 
     // let obj = cartData.find(x => x.id == cartItem.id);
@@ -65,12 +72,14 @@ const Product = ({ products }) => {
     // // console.log(index);
     // cartData.splice(index,1);
     // console.log(cartData);
-  };
-
-  // document.addEventListener('DOMContentLoaded',getRatings);
-  // <script>
-  // document.addEventListener('DOMContentLoaded',getRatings);
-  // </script>
+    
+}
+ 
+    // document.addEventListener('DOMContentLoaded',getRatings);
+    // <script>
+    // document.addEventListener('DOMContentLoaded',getRatings);
+    // </script>
+  
 
   return (
     <>
@@ -80,10 +89,7 @@ const Product = ({ products }) => {
           {product && (
             <>
               <div className="w-[90%]  mx-auto flex flex-col-reverse gap-4 md:flex-row ">
-                <div
-                  id="images"
-                  className="w-full  flex items-center justify-center  md:w-1/2"
-                >
+                <div id="images" className="w-full  flex items-center justify-center  md:w-1/2">
                   {/* <div className="all-images">
                       <img
                         src={product.images[0]}
@@ -132,7 +138,7 @@ const Product = ({ products }) => {
                         />
                       </div>
                     </div>
-
+                   
                     <button
                       className=" left-[-50px] md:left-[-60px] carousel-control-prev"
                       type="button"
@@ -142,9 +148,7 @@ const Product = ({ products }) => {
                       <span
                         className="text-purple-600  text-5xl"
                         aria-hidden="true"
-                      >
-                        <SlArrowLeft></SlArrowLeft>
-                      </span>
+                      ><SlArrowLeft></SlArrowLeft></span>
                       <span className="visually-hidden">Previous</span>
                     </button>
                     <button
@@ -156,13 +160,14 @@ const Product = ({ products }) => {
                       <span
                         className="text-purple-600 text-5xl"
                         aria-hidden="true"
-                      >
-                        <SlArrowRight></SlArrowRight>
-                      </span>
+                      ><SlArrowRight></SlArrowRight></span>
                       <span className="visually-hidden">Next</span>
                     </button>
                   </div>
                 </div>
+
+
+
 
                 <div id="details" className="w-full md:w-1/2">
                   <div className="flex flex-col gap-4 text-start ">
@@ -170,15 +175,28 @@ const Product = ({ products }) => {
                     <div className="reviews">
                       <div className="flex">
                         {/* Adding rating Ramaz */}
-                        <div className="">
-                          <p className="">
-                            <b>Rating:</b> {Math.round(product.rating * 10) / 10}
-                          </p>
-                          <div className="stars-outer">
-                            <div id="toni" className="stars-inner"></div>
-                          </div>
-                          <span className="number-rating"></span>
+
+                        <div className="container">
+                          <table className="table table-striped">
+                              <thead>
+                                  <tr>
+                                    <th>Rating  {Math.round(product.rating*10)/10}</th>
+                                  </tr>
+                              </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                  <div className="stars-outer">
+                                    <div id="toni" className="stars-inner"></div> 
+                                  </div> 
+                                  <span className="number-rating"></span>
+                              </td>
+                            </tr>
+                          </tbody>
+                          </table>
+                          
                         </div>
+
 
                         {/* <AiFillStar />
                         <AiFillStar />
@@ -187,7 +205,7 @@ const Product = ({ products }) => {
                         <AiOutlineStar /> */}
                       </div>
                       {/* ramaz */}
-                      {/* <p>{product.reviewed} reviews</p> */}
+                      <p>{product.reviewed} reviews</p>
                     </div>
                     <p className="text-">
                       <b>Description: </b>
@@ -207,43 +225,36 @@ const Product = ({ products }) => {
                         <b>Quantity:</b>
                       </p>
                       <p className="flex border border-solid border-gray-500">
-                        <button
-                          className="text-base py-3 px-3 cursor-pointer border-l border-solid border-gray-500 text-green-600"
-                          onClick={() => {
+                      <button
+                          className="text-base py-3 px-3 cursor-pointer border-l border-solid border-gray-500 text-green-600" 
+                          onClick={()=>{
                             // console.log(item);
                             handleItemIncrease(product);
-                          }}
-                        >
-                          {" "}
-                          <AiOutlinePlus />{" "}
-                        </button>
-
-                        <span className="text-xl py-2 px-3 cursor-pointer">
-                          {itemQty}
-                        </span>
+                           }}> <AiOutlinePlus/> </button>
+                          
+                       
+                        <span className="text-xl py-2 px-3 cursor-pointer">{itemQty}</span>
                         <button
-                          className="text-base py-3 px-3 cursor-pointer border-l border-solid border-gray-500 text-green-600"
-                          onClick={() => {
+                          className="text-base py-3 px-3 cursor-pointer border-l border-solid border-gray-500 text-green-600" 
+                          onClick={()=>{
                             // console.log(item);
                             handleItemDecrease(product);
-                          }}
-                        >
-                          <AiOutlineMinus />{" "}
-                        </button>
+                           }}><AiOutlineMinus/> </button>
+                      
                       </p>
                     </div>
                     {/* Ramaz */}
                     <div className="flex flex-row flex-wrap gap-2">
                       <button
-                        className="w-60 justify-center text-2xl flex flex-row p-2 rounded-md bg-purple-900 text-white border-2 border-purple-700 hover:text-slate-900 hover:bg-rose-800"
-                        type="button"
-                        onClick={() => {
+                        className="w-60 justify-center text-2xl flex flex-row p-2 rounded-md bg-white text-purple-700 border-2 border-purple-700"
+                        type="button" onClick={()=>{
                           // console.log(item);
                           handleAddToCart(product);
-                        }}
+                          }}
                       >
                         Add to Cart
                       </button>
+                      
                     </div>
                   </div>
                 </div>
@@ -262,7 +273,10 @@ const Product = ({ products }) => {
         </article>
       </main>
       <section>
-        <OtherProducts products={products} product={product} />
+        <OtherProducts
+          products={products}
+          product={product}
+        />
       </section>
       {getRatings()}
     </>

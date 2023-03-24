@@ -7,7 +7,7 @@ const Category = ({ products }) => {
 
   return (
     <>
-      <section className="mt-[130px]">
+      <article className="mt-[140px] md:mt-[110px]">
         <div className="flex justify-center">
           <h2 className="text-4xl p-2">{id.toUpperCase()}</h2>
         </div>
@@ -19,7 +19,7 @@ const Category = ({ products }) => {
               <Card key={item.id} item={item} category={id} />
             ))}
         </div>
-      </section>
+      </article>
     </>
   );
 };

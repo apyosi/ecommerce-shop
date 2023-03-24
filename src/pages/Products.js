@@ -4,7 +4,7 @@ import Card from "../components/Card";
 function Products({products}) {
   return (
     <>
-      <main id="products" className="container-fluid">
+      <main id="products" className="container-fluid mt-[140px] md:mt-[110px]">
         <h1 className="text-center">Products</h1>
         <hr />
         <div className="container">

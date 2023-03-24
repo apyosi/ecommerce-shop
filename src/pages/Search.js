@@ -3,9 +3,9 @@ import Categories from "./Categories";
 
 const Search = ({ categories, products }) => {
   return (
-    <div>
+    <article className="mt-[140px] md:mt-[110px]">
       <Categories categories={categories} products={products} />
-    </div>
+    </article>
   );
 };
 

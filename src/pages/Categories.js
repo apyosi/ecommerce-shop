@@ -11,7 +11,7 @@ const Categories = ({ categories, products }) => {
 
       {categories.map((category) => (
         <>
-          <section className="mt-[130px]">
+          <section className="mt-[140px] md:mt-[110px]">
             <div className="flex justify-center items-center text-slate-600">
               <h2 className="text-3xl p-2">{category.toUpperCase()} ➡️</h2>
               <div className="">

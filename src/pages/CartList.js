@@ -5,7 +5,7 @@ import Cards from '../components/Cards';
 console.log("list mod",cartListData);
 const CartList = ({handleClick}) => {
   return (
-    <article className="mt-[120px]">
+    <article className="mt-[140px] md:mt-[110px]">
         {
             cartListData.map((item)=>(
                 <Cards item={item} key={item.id} handleClick={handleClick} />

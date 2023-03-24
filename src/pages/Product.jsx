@@ -85,7 +85,7 @@ const handleItemDecrease = (item) =>{
     <>
       <main id="product">
         <hr />
-        <article className="mt-[120px] ">
+        <article className="mt-[140px] md:mt-[110px]">
           {product && (
             <>
               <div className="w-[90%]  mx-auto flex flex-col-reverse gap-4 md:flex-row ">

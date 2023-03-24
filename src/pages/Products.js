@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "../components/Card";
-import Confetti from "../components/Confetti";
+import Confetti from '../components/Confetti'
+
+
 
 function Products({products}) {
+  useEffect(() => {
+    Confetti();
+  }, []);
+
   return (
     <>
       <main id="products" className="container-fluid mt-[140px] md:mt-[110px]">

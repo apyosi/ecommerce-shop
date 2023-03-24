@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { MenuIcon, SearchIcon, XIcon, ShoppingBagIcon} from '@heroicons/react/outline'
+import Cart from "../pages/Cart";
 
 function NavTabs({ search, setSearch }) {
   const[menu,setMenu] = useState(false)
+  const [ItemQty, setItemQty] = useState(localStorage.getItem('cartItemQty'));
 
   let menuBar
 

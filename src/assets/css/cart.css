@@ -4,7 +4,9 @@
 }
 #cart{
     width: 60%;
-    margin: auto;
+    margin: 200px auto;
+    padding: 50px;
+    border-radius: 10px;
 }
 .cart_box img{
     width: 50px;

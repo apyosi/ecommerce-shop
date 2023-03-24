@@ -72,7 +72,8 @@ const Cart = ({ cart, setCart }) => {
     return (
         // <h1>sdgbnsngfs</h1>
 
-        <article className="mt-[120px]">
+        <article id="cart"  className="mt-[120px] bg-slate-50 shadow-xl">
+      <h1 className="text-3xl  text-slate-600 mb-5">Your shopping basket</h1>
             {
                 existingCartData?.map((item) => (
                     <div className="cart_box" key={item.id}>
@@ -109,6 +110,7 @@ const Cart = ({ cart, setCart }) => {
                 <span>Total Price of your Cart</span>
                 <span>£ {price}</span>
             </div>
+              <button className="w-[300px] text-2xl font-bold p-3 m-10 bg-red-500 rounded-lg text-white">Buy now</button>
         </article>
     )
 }

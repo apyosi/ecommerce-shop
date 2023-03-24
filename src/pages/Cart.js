@@ -74,12 +74,12 @@ const Cart = ({ cart, setCart }) => {
   return (
     // <h1>sdgbnsngfs</h1>
 
-    <article className="container mt-[140px] md:mt-[110px]">
-      <h2 className="text-3xl font-bold mb-4">Shopping Bag</h2>
+    <article id="cart" className="container flex flex-col items-center bg-slate-50 shadow-xl p-5 mt-[140px] md:mt-[110px]">
+      <h2 className="text-3xl text-slate-600 font-bold mb-4">Shopping Bag</h2>
       <hr className="mb-8" />
       {existingCartData?.map((item) => (
-        <div className="cart_box" key={item.id}>
-          <div className="cart_img">
+        <div className=" cart_box w-[350px] md:w-[70%]" key={item.id}>
+          <div className=" cart_img">
             <img src={item.images[0]} />
             <p>{item.title}</p>
           </div>
@@ -118,10 +118,11 @@ const Cart = ({ cart, setCart }) => {
         </div>
       ))}
 
-      <div className="total">
-        <span>Total Price of your Cart</span>
-        <span>£ {price}</span>
+      <div className="mt-10 w-[70%] total">
+        <span>Total: &nbsp; </span>
+        <span> £{price}</span>
       </div>
+          <button className="w-[300px]  text-2xl font-bold p-3 m-10 bg-red-500 rounded-lg text-white">Buy now</button>
     </article>
   );
 };

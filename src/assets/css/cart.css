@@ -4,7 +4,9 @@
 }
 #cart{
     width: 60%;
-    margin: auto;
+    margin: 200px auto;
+    padding: 50px;
+    border-radius: 10px;
 }
 .cart_box img{
     width: 50px;
@@ -23,7 +25,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
-    border-bottom: 2px solid skyblue;
+    border-bottom: 2px solid #94a3b8;
     padding-bottom: 5px;
 }
 .cart_box div:nth-child(2) button{
@@ -57,12 +59,12 @@
 }
 .total span:nth-child(1){
     font-size: 2rem;
-    color: skyblue;
-    font-weight: bold;
+    color: #334155;
+    font-weight:600;
     letter-spacing: 2px;
 }
 .total span:nth-child(2){
     font-size: 2rem;
-    color: green;
+    color: orangered;
     font-weight: bold;
 }

@@ -87,7 +87,9 @@ const Cart = ({cart, setCart}) => {
         <div className='total'>
             <span>Total Price of your Cart</span>
             <span>£ {price}</span>
+            
         </div>
+        <button className="w-[300px] text-2xl font-bold p-3 m-10 bg-red-500 rounded-lg text-white">Buy now</button>
     </article></>
   )
 }

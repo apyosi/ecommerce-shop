@@ -72,7 +72,7 @@ const Cart = ({ cart, setCart }) => {
     return (
         // <h1>sdgbnsngfs</h1>
 
-        <article className="mt-[120px]">
+        <article className="mt-[140px] md:mt-[110px]">
             {
                 existingCartData?.map((item) => (
                     <div className="cart_box" key={item.id}>

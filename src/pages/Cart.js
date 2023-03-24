@@ -50,11 +50,17 @@ const Cart = ({cart, setCart}) => {
 
   return (
     // <h1>sdgbnsngfs</h1>
-
-    <article id="cart">
+    <>
+    
+    <article id="cart" className="bg-slate-50 shadow-xl">
+      <h1 className="text-3xl  text-slate-600 mb-5">Your shopping basket</h1>
         {
+          
             cartData?.map((item)=>(
+                
+               
                 <div className="cart_box" key={item.id}>
+                
                     <div className="cart_img">
                         <img src={item.images[0]} />
                         <p>{item.title}</p>
@@ -82,7 +88,7 @@ const Cart = ({cart, setCart}) => {
             <span>Total Price of your Cart</span>
             <span>£ {price}</span>
         </div>
-    </article>
+    </article></>
   )
 }
 // handleClick={handleClick}

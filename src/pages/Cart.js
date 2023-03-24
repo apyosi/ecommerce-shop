@@ -74,7 +74,7 @@ const Cart = ({ cart, setCart }) => {
   return (
     // <h1>sdgbnsngfs</h1>
 
-    <article className="container mt-[140px] md:mt-[110px] h-[500px]">
+    <article className="container mt-[140px] md:mt-[110px]">
       <h2 className="text-3xl font-bold mb-4">Shopping Bag</h2>
       <hr className="mb-8" />
       {existingCartData?.map((item) => (

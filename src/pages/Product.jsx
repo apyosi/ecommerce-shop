@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useState} from "react";
 import { Link, useParams } from "react-router-dom";
 // import { FaShoppingCart } from "react-icons/fa";
 // import { BsCart4 } from "react-icons/bs";

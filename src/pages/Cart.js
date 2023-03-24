@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import Cards from "../components/Cards";
-import CartList from "./CartList";
+// import Cards from "../components/Cards";
+// import CartList from "./CartList";
 import "../assets/css/cart.css";
 // const cartData=require('../cart.json');
 // const fs = require('fs')

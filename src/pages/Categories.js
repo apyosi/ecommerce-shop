@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Card from "../components/Card";
 import AliceCarousel from "react-alice-carousel";

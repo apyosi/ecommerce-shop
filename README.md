@@ -1,7 +1,3 @@
-
-
-
-
 <a id="readme-top"></a>
 
 <div align="center">
@@ -67,19 +63,19 @@ Clone the repository: `git@github.com:apyosi/ecommerce-shop.git`
 
 Navigate in the folder: `cd ecommerce-shop`
 
-Install all the required dependencies:  `npm install`
+Install all the required dependencies: `npm install`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <h2 id="usage">▶️ Usage</h2>
 
-In the project directory, run in cli the following command: ```npm start```
+In the project directory, run in cli the following command: `npm start`
 
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in your browser.
 
 The page will reload when you make changes.
- You may also see any lint errors in the console.
+You may also see any lint errors in the console.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,20 +87,20 @@ Contributions are always welcome!
 
 <h2 id="tests">🧪 Tests</h2>
 
-To run the test, run the following command: 
+To run the test, run the following command:
 
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.
- See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
 Builds the app for production to the `build` folder.
- It correctly bundles React in production mode and optimizes the build for the best performance.
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.
- Your app is ready to be deployed!
+Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
@@ -136,7 +132,8 @@ You can reach us for any questions on the github repo page: [https://github.com/
 
 ## Acknowledgments
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Quert
+
+- Hello, I want to contribute to this project can I give a suggestion like using redux for global state management and re-design the UI?

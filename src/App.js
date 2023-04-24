@@ -18,6 +18,8 @@ import Search from "./pages/Search";
 import Cart from "./pages/Cart";
 import cartData from "../src/cart.json";
 import ScrollBtn from "./components/ScrollBtn";
+import MyComponent from "./components/MyComponent";
+import Slider from "./components/Slider";
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -64,7 +66,7 @@ function App() {
   const [cartData, setCartData] = useState(database);
 
   useEffect(() => {
-    const fetchProducts = async () => {
+/*     const fetchProducts = async () => {
       try {
         // const response = await fetch("https://dummyjson.com/products/");
         const response = await fetch(
@@ -77,7 +79,7 @@ function App() {
         console.log(err);
       }
     };
-    fetchProducts();
+    fetchProducts(); */
 
     // console.log(search);
     const filteredResults = products.filter(
@@ -183,6 +185,9 @@ function App() {
               {/* Ramaz */}
 
               <Route path="/cart" element={<Cart />} />
+
+              <Route path="/mycomponent" element={<MyComponent />} />
+              <Route path="/slider" element={<Slider />} />
 
               <Route path="/search" element={<Search categories={categories} products={searchResults} />} />
               <Route path="*" element={<NotFound />} />

@@ -139,7 +139,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<h2 id="questions">❓ Questions</h2>
+<h2 id="questions">❓ Questions </h2>
 
 You can reach us for any questions on the github repo page: [https://github.com/apyosi/ecommerce-shop](https://github.com/apyosi/ecommerce-shop)
 

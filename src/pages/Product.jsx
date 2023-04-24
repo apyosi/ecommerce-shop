@@ -12,6 +12,12 @@ import {
   // AiOutlineStar,
 } from "react-icons/ai";
 import OtherProducts from "../components/OtherProducts";
+import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
+import { useRef } from "react";
+// import "@splidejs/react-splide/css";
+import "@splidejs/react-splide/css/skyblue";
+// import '@splidejs/react-splide/css/sea-green';
+
 // const cartData=require('../cart.json');
 
 // useEffect(()=>{
@@ -72,6 +78,68 @@ const Product = ({ products }) => {
   // document.addEventListener('DOMContentLoaded',getRatings);
   // </script>
 
+  // START ALICE CAROUSEL
+
+  // console.log(product.images);
+  // console.log(product);
+
+  const items = product.images.map((item, i) => {
+    return (
+      <div className="item" data-value={i}>
+        <img src={item} />
+      </div>
+    );
+  });
+
+  // const items = product.images.map((item, i) => {
+  //   return (
+  //     <SplideSlide>
+  //       <img src={item} />
+  //       </SplideSlide>
+  //   );
+  // });
+
+  //  console.log(items1);
+  // const items = [];
+  // product.images.forEach((element, i) => {
+  //   let html = (
+  //     <div key={i} className="item" data-value={i}>
+  //       <img src={element} />
+  //     </div>
+  //   );
+  //   items.push(html);
+  // });
+
+  // END ALICE CAROUSEL
+  // mainRef = React.createRef<Splide>();
+
+  // /**
+  //  * The thumbnail Splide component.
+  //  */
+  // thumbsRef = React.createRef<Splide>();
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const mainOptions = {
+    type: "loop",
+    perPage: 2,
+    perMove: 1,
+    gap: "1rem",
+    pagination: false,
+    height: "10rem",
+  };
+
+  const thumbsOptions = {
+    type: "slide",
+    rewind: true,
+    gap: "1rem",
+    pagination: false,
+    fixedWidth: 110,
+    fixedHeight: 70,
+    cover: true,
+    focus: "center",
+    isNavigation: true,
+  };
+
   return (
     <>
       <main id="product">
@@ -79,68 +147,118 @@ const Product = ({ products }) => {
         <article className="mt-[140px] md:mt-[110px]">
           {product && (
             <>
-              <div className="w-[90%]  mx-auto flex flex-col-reverse gap-4 md:flex-row ">
+              <div className="w-full h-[700px]">
+                {/* Start Alice carousel */}
+                <div className="wrapper">
+                  <h2 id="thumbnail-slider-example">Thumbnail Slider</h2>
+
+                  <Splide
+                    options={{
+                      type: "fade",
+                      height: "30vw",
+                      autoHeight: false,
+                      cover: true,
+                      width: "80vw",
+                      onMoved: (splide) => {
+                        setCurrentIndex(splide.index);
+                      },
+                    }}
+                    onMoved={(splide) => {
+                      setCurrentIndex(splide.index);
+                    }}
+                    hasSliderWrapper
+                    aria-labelledby="thumbnail-slider-example"
+                  >
+                    {product.images.map((item, i) => {
+                      return (
+                        <SplideSlide key={i}>
+                          <img src={item} alt={i} />
+                        </SplideSlide>
+                      );
+                    })}
+                  </Splide>
+
+                  <Splide
+                    options={{
+                      fixedWidth: 100,
+                      height: 60,
+                      gap: 10,
+                      cover: true,
+                      isNavigation: true,
+                      focus: "center",
+                    }}
+                    hasSliderWrapper
+                    aria-label="The carousel with thumbnails. Selecting a thumbnail will change the main carousel"
+                  >
+                    {product.images.map((item, i) => {
+                      return (
+                        <SplideSlide key={i}>
+                          <div
+                            className={`thumbnail ${
+                              currentIndex === i ? "active" : ""
+                            }`}
+                            onClick={() => setCurrentIndex(i)}
+                          >
+                            <img src={item} alt={i} />
+                          </div>
+                        </SplideSlide>
+                      );
+                    })}
+                  </Splide>
+                </div>
+
+                {/* End Alice carousel */}
+              </div>
+              <div className="w-[90%] mx-auto flex flex-col-reverse gap-4 md:flex-row ">
                 <div
                   id="images"
-                  className="w-full  flex items-center justify-center  md:w-1/2"
+                  className="w-full  flex items-center justify-center md:w-1/2"
                 >
-                  {/* <div className="all-images">
-                      <img
-                        src={product.images[0]}
-                        className="img-fluid rounded-start"
-                        alt="{product.title}"
-                      />
-                      <img
-                        src={product.images[1]}
-                        className="img-fluid rounded-start"
-                        alt="{product.title}"
-                      />
-                      <img
-                        src={product.images[2]}
-                        className="img-fluid rounded-start"
-                        alt="{product.title}"
-                      />
-                    </div> */}
-                  <div
+                  {/* Start Bootstrap carousel */}
+                  {/*                   <div
                     id="carouselExampleInterval"
-                    className="carousel slide "
+                    className="carousel slide border"
                     data-bs-ride="carousel"
                   >
-                    <div className=" carousel-inner w-80">
-                      <div
-                        className="carousel-item active"
-                        data-bs-interval="2000"
-                      >
-                        <img
-                          src={product.images[0]}
-                          className="d-block bg-white w-full h-[600px] object-contain"
-                          alt="..."
-                        />
-                      </div>
-                      <div className="carousel-item" data-bs-interval="2000">
-                        <img
-                          src={product.images[1]}
-                          className="d-block bg-white w-full h-[600px] object-contain"
-                          alt="..."
-                        />
-                      </div>
-                      <div className="carousel-item" data-bs-interval="2000">
-                        <img
-                          src={product.images[2]}
-                          className="d-block bg-white w-full h-[600px] object-contain"
-                          alt="..."
-                        />
-                      </div>
+                    <div className="carousel-inner">
+                      {product.images.map((item, index) => {
+                        if (index === 0) {
+                          return (
+                            <div
+                              className="carousel-item active"
+                              data-bs-interval="2000"
+                            >
+                              <img
+                                src={item}
+                                className="d-block bg-white w-full h-[600px] object-cover"
+                                alt={index}
+                              />
+                            </div>
+                          );
+                        } else {
+                          return (
+                            <div
+                              className="carousel-item"
+                              data-bs-interval="2000"
+                            >
+                              <img
+                                src={item}
+                                className="d-block bg-white w-full h-[600px] object-cover"
+                                alt={index}
+                              />
+                            </div>
+                          );
+                        }
+                      })}
                     </div>
-
                     <button
-                      className=" left-[-50px] md:left-[-60px] carousel-control-prev"
+                      className="carousel-control-prev absolute left-0"
                       type="button"
                       data-bs-target="#carouselExampleInterval"
                       data-bs-slide="prev"
                     >
                       <span
-                        className="text-purple-600  text-5xl"
+                        className="text-purple-600 text-5xl"
                         aria-hidden="true"
                       >
                         <SlArrowLeft></SlArrowLeft>
@@ -148,7 +266,7 @@ const Product = ({ products }) => {
                       <span className="visually-hidden">Previous</span>
                     </button>
                     <button
-                      className="left-[320px] md:left-[330px] carousel-control-next"
+                      className="carousel-control-next"
                       type="button"
                       data-bs-target="#carouselExampleInterval"
                       data-bs-slide="next"
@@ -161,7 +279,8 @@ const Product = ({ products }) => {
                       </span>
                       <span className="visually-hidden">Next</span>
                     </button>
-                  </div>
+                  </div> */}
+                  {/* End Bootstrap carousel */}
                 </div>
 
                 <div id="details" className="w-full md:w-1/2">
@@ -172,7 +291,8 @@ const Product = ({ products }) => {
                         {/* Adding rating Ramaz */}
                         <div className="">
                           <p className="">
-                            <b>Rating:</b> {Math.round(product.rating * 10) / 10}
+                            <b>Rating:</b>{" "}
+                            {Math.round(product.rating * 10) / 10}
                           </p>
                           <div className="stars-outer">
                             <div id="toni" className="stars-inner"></div>

@@ -208,7 +208,7 @@ const Product = ({ products }) => {
                       </p>
                       <p className="flex border border-solid border-gray-500">
                         <button
-                          className="text-base py-3 px-3 cursor-pointer border-l border-solid border-gray-500 text-green-600"
+                          className="text-base py-3 px-3 cursor-pointer border-r border-solid border-gray-500 text-green-600"
                           onClick={() => {
                             // console.log(item);
                             handleItemIncrease(product);
@@ -235,7 +235,8 @@ const Product = ({ products }) => {
                     {/* Ramaz */}
                     <div className="flex flex-row flex-wrap gap-2">
                       <button
-                        className="w-60 justify-center text-2xl flex flex-row p-2 rounded-md bg-purple-900 text-white border-2 border-purple-700 hover:text-slate-900 hover:bg-rose-800"
+                        id="addtocart"
+                        className="w-60 justify-center text-2xl flex flex-row p-2 rounded-md bg-purple-900 text-white border-2 border-purple-700 hover:text-slate-900 hover:bg-rose-800 active:bg-green-900 active:mt-1 active:ml-1"
                         type="button"
                         onClick={() => {
                           // console.log(item);

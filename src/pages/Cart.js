@@ -123,7 +123,7 @@ const Cart = ({ cart, setCart }) => {
         <span>Total: &nbsp; </span>
         <span> £{price}</span>
       </div>
-              <Link to="/order-complete"><button className="w-[300px]  text-2xl font-bold p-3 m-10 bg-red-500 rounded-lg text-white">Buy now</button></Link>
+              <Link to="/order-complete"><button className="w-[300px] text-2xl font-bold p-3 m-10 bg-red-500 rounded-lg text-white active:mt-1 active:ml-1">Buy now</button></Link>
           
     </article>
   );

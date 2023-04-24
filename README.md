@@ -11,7 +11,7 @@
 <a href="https://github.com/apyosi/ecommerce-shop/stargazers"><img src="https://img.shields.io/github/stars/apyosi/ecommerce-shop.svg?style=for-the-badge" alt=""></a>
 <a href="https://github.com/apyosi/ecommerce-shop/issues"><img src="https://img.shields.io/github/issues/apyosi/ecommerce-shop.svg?style=for-the-badge" alt=""></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt=""></a><br>
-<a href="https://transcendent-kringle-16abc9.netlify.app/" target="_blank" style="color:red;padding-left:10px;padding-right:10px;padding-bottom:2px;font-weight:600;border-style:solid;border-color:red;border-width:2px;">View Demo</a><br>
+<h2><a href="https://transcendent-kringle-16abc9.netlify.app/" target="_blank"">View Demo</a></h2><br>
 </div>
 <hr>
 <details open>

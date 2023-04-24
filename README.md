@@ -13,7 +13,7 @@
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt=""></a><br>
 <h2><a href="https://transcendent-kringle-16abc9.netlify.app/" target="_blank"">View Demo</a></h2><br>
 </div>
-<hr>
+
 <details open>
   <summary>Table of Contents</summary>
   <ol>
@@ -27,21 +27,21 @@
     <li><a href="#questions">Questions</a></li>
   </ol>
 </details>
-<hr>
+
 <h2 id="description">🧾 Description</h2>
 
 
  Fully responsive React eCommerce application deployed on Netlify!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr>
+
 <h2 id="screenshots"> 🖼️ Screenshots</h2>
 
 ![screenshot](./demo/image1.png "Home page screenshot")
 ![screenshot](./demo/image2.png "Product page screenshot")
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr>
+
 <h2 id="description">🛠️ Built with</h2>
 
 <a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /></a>
@@ -71,7 +71,7 @@
 <a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/Zoom-2D8CFF?style=for-the-badge&logo=zoom&logoColor=white" /></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr>
+
 <h2 id="installation">💾 Installation</h2>
 
 Clone the repository: `git@github.com:apyosi/ecommerce-shop.git`
@@ -81,7 +81,7 @@ Navigate in the folder: `cd ecommerce-shop`
 Install all the required dependencies:  `npm install`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr>
+
 <h2 id="usage">▶️ Usage</h2>
 
 In the project directory, run in cli the following command: ```npm start```
@@ -93,13 +93,13 @@ The page will reload when you make changes.
  You may also see any lint errors in the console.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr>
+
 <h2 id="contributing">🧑🏻‍🔧 Contributing</h2>
 
 Contributions are always welcome!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr>
+
 <h2 id="tests">🧪 Tests</h2>
 
 To run the test, run the following command: 
@@ -120,13 +120,13 @@ The build is minified and the filenames include the hashes.
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr>
+
 <h2 id="license">🔍 License</h2>
 
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt=""></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr>
+
 <h2 id="license">🫂 Authors</h2>
 
 [apyosi](https://github.com/apyosi)
@@ -138,12 +138,12 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 [Ramaz-Didi](https://github.com/Ramaz-Didi)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr>
+
 <h2 id="questions">❓ Questions</h2>
 
 You can reach us for any questions on the github repo page: [https://github.com/apyosi/ecommerce-shop](https://github.com/apyosi/ecommerce-shop)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr>
+
 
 

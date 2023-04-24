@@ -30,7 +30,7 @@ function Products({ products }) {
               <button
                 type="button"
                 width="300px"
-                className="p-4 mb-[200px] bg-yellow-400 text-3xl border-0  shadow-xl"
+                className="p-4 mb-[200px] bg-yellow-400 text-3xl border-0 shadow-xl active:mt-1 active:ml-1"
               >
                 Continue Shopping
               </button>

@@ -19,6 +19,7 @@ import Cart from "./pages/Cart";
 import cartData from "../src/cart.json";
 import ScrollBtn from "./components/ScrollBtn";
 
+
 const Wrapper = ({ children }) => {
   const location = useLocation();
   useLayoutEffect(() => {
@@ -64,7 +65,7 @@ function App() {
   const [cartData, setCartData] = useState(database);
 
   useEffect(() => {
-    const fetchProducts = async () => {
+/*     const fetchProducts = async () => {
       try {
         // const response = await fetch("https://dummyjson.com/products/");
         const response = await fetch(
@@ -77,7 +78,7 @@ function App() {
         console.log(err);
       }
     };
-    fetchProducts();
+    fetchProducts(); */
 
     // console.log(search);
     const filteredResults = products.filter(
@@ -180,12 +181,13 @@ function App() {
                   element={<Product products={products} />}
                 />
               </Route>
-              {/* Ramaz */}
+
 
               <Route path="/cart" element={<Cart />} />
 
               <Route path="/search" element={<Search categories={categories} products={searchResults} />} />
               <Route path="*" element={<NotFound />} />
+
             </Route>
           </Routes>
         </Wrapper>

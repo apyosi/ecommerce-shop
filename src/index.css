@@ -22,7 +22,6 @@ code {
   }
 }
 
-
 .active {
   background-color: indigo;
 }
@@ -45,3 +44,58 @@ code {
   right: 0px;
   font-size: 3rem;
 }
+
+#splide01 .splide__slide {
+  padding: 0px;
+  margin: 0px;
+  width: 100px;
+  height: 100px;
+}
+
+#splide01 img {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  width: 100px;
+  height: 94px;
+  object-fit: cover;
+  object-position: center;
+  /* z-index: -10; */
+}
+
+#splide02 img {
+  padding: 0px;
+  margin: 0 auto;
+  border: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* object-position: center; */
+  /* z-index: -10; */
+}
+
+/* .thumbnails {
+  display: flex;
+  margin: 1rem auto 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.thumbnail.is-active {
+  opacity: 1;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+} */

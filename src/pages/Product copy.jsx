@@ -1,4 +1,9 @@
-import React, { useEffect, useState, useRef } from "react";
+/* 
+This is copy of privious version ov slider - bootstrap
+*/
+
+
+import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 // import { FaShoppingCart } from "react-icons/fa";
 // import { BsCart4 } from "react-icons/bs";
@@ -14,17 +19,19 @@ import {
 import OtherProducts from "../components/OtherProducts";
 
 //Import Splide and SplideSlide components
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { Options } from "@splidejs/splide";
+import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
+
 // Default theme
-import "@splidejs/react-splide/css";
+import '@splidejs/react-splide/css';
 
 // or other themes
 // import '@splidejs/react-splide/css/skyblue';
-// import '@splidejs/react-splide/css/sea-green';
+import '@splidejs/react-splide/css/sea-green';
 
 // or only core styles
 // import '@splidejs/react-splide/css/core';
+
+
 
 // const cartData=require('../cart.json');
 
@@ -91,6 +98,7 @@ const Product = ({ products }) => {
   // console.log(product.images);
   // console.log(product);
 
+
   // const items = product.images.map((item, i) => {
   //   return (
   //     <div className="item" data-value={i}>
@@ -99,6 +107,7 @@ const Product = ({ products }) => {
   //   );
   // });
 
+
   // const items = product.images.map((item, i) => {
   //   return (
   //     <SplideSlide>
@@ -106,6 +115,7 @@ const Product = ({ products }) => {
   //       </SplideSlide>
   //   );
   // });
+
 
   //  console.log(items1);
   // const items = [];
@@ -120,37 +130,11 @@ const Product = ({ products }) => {
 
   // END ALICE CAROUSEL
 
-  // start splide
-  const mainRef = useRef(null);
-  const thumbsRef = useRef(null);
-
-  useEffect(() => {
-    if (mainRef.current && thumbsRef.current && thumbsRef.current.splide) {
-      mainRef.current.sync(thumbsRef.current.splide);
-    }
-  }, []);
-
-  const renderSlides = () => {
-    return product.images.map((item, i) => (
-      <SplideSlide key={i}>
-        <img src={item} alt={i} />
-      </SplideSlide>
-    ));
-  };
-
-  const renderThumbs = () => {
-    return product.images.map((item, i) => (
-      <SplideSlide key={i}>
-        <img src={item} alt={i} />
-      </SplideSlide>
-    ));
-  };
-
-  // end splide
 
   // /**
   //  * The thumbnail Splide component.
   //  */
+  
 
   return (
     <>
@@ -159,67 +143,122 @@ const Product = ({ products }) => {
         <article className="mt-[140px] md:mt-[110px]">
           {product && (
             <>
+              <div className="w-full h-[700px]">
+                {/* Start Alice carousel */}
+                <div className="wrapper">
+                  <h2 id="thumbnail-slider-example">Thumbnail Slider</h2>
+
+                  <Splide 
+                  options={ {
+                    rewind: true,
+                    width : 800,
+                    gap   : '1rem',
+                  } }
+                  className="my-carousel" 
+                  hasTrack={ false } 
+                  aria-label="My Favorite Images"
+                  tag="section"
+                  onArrowsMounted={ ( splide, prev, next ) => { console.log( prev, next ) } }
+                  >
+                  <SplideTrack>
+                  {product.images.map((item, i) => {
+                      return (
+                        <SplideSlide key={i}>
+                          <img src={item} alt={i} />
+                        </SplideSlide>
+                      );
+                    })}
+                    </SplideTrack>
+                    {/* <div className="splide__arrows">
+                      <button className="splide__arrow splide__arrow--prev">Prev</button>
+                      <button className="splide__arrow splide__arrow--next">Next</button>
+                    </div> */}
+                      <div className="splide__progress">
+                        <div className="splide__progress__bar" />
+                      </div>
+
+                      <button className="splide__toggle" type="button">
+                        <span className="splide__toggle__play">Play</span>
+                        <span className="splide__toggle__pause">Pause</span>
+                      </button>
+                  </Splide>
+
+                </div>
+
+                {/* End Alice carousel */}
+              </div>
               <div className="w-[90%] mx-auto flex flex-col-reverse gap-4 md:flex-row ">
                 <div
                   id="images"
-                  className="w-full flex items-center justify-center md:w-1/2"
+                  className="w-full  flex items-center justify-center md:w-1/2"
                 >
-                  {/* Start Splide carousel */}
-                  <div className="wrapper w-[100px]">
-                    <Splide
-                      options={{
-                        direction: "ttb",
-                        height: "550px",
-                        type: "slide",
-                        // perPage: 3,
-                        // rewind: true,
-                        gap: '5px',
-                        pagination: false,
-                        fixedWidth: "100px",
-                        fixedHeight: "100px",
-                        // cover: true,
-                        // focus: 'center',
-                        // trimSpace: false,
-                        isNavigation: true,
-                        width: "100px",
-                        arrows: false,
-                        // keyboard: 'global',
-                      }}
-                      ref={thumbsRef}
-                      aria-label="The carousel with thumbnails. Selecting a thumbnail will change the main carousel"
+                  {/* Start Bootstrap carousel */}
+                  {/*                   <div
+                    id="carouselExampleInterval"
+                    className="carousel slide border"
+                    data-bs-ride="carousel"
+                  >
+                    <div className="carousel-inner">
+                      {product.images.map((item, index) => {
+                        if (index === 0) {
+                          return (
+                            <div
+                              className="carousel-item active"
+                              data-bs-interval="2000"
+                            >
+                              <img
+                                src={item}
+                                className="d-block bg-white w-full h-[600px] object-cover"
+                                alt={index}
+                              />
+                            </div>
+                          );
+                        } else {
+                          return (
+                            <div
+                              className="carousel-item"
+                              data-bs-interval="2000"
+                            >
+                              <img
+                                src={item}
+                                className="d-block bg-white w-full h-[600px] object-cover"
+                                alt={index}
+                              />
+                            </div>
+                          );
+                        }
+                      })}
+                    </div>
+                    <button
+                      className="carousel-control-prev absolute left-0"
+                      type="button"
+                      data-bs-target="#carouselExampleInterval"
+                      data-bs-slide="prev"
                     >
-                      {renderThumbs()}
-                    </Splide>
-                  </div>
-                  <div className="wrapper w-[100%]">
-                    <Splide
-                      options={{
-                        direction: "ltr",
-                        type: "fade",
-                        // perPage: 1,
-                        // perMove: 1,
-                        // gap: '1rem',
-                        rewind: true,
-                        pagination: false,
-                        // height: '400px',
-                        // heightRatio: '1.9',
-                        width: "100%",
-                        height: "600px",
-                        rewindByDrag: 'true',
-                        // padding: '10%',
-                        // arrows: false,
-                        autoplay: true,
-                        interval: 3000,
-                        keyboard: 'global',
-                        // cover: true,
-                      }}
-                      ref={mainRef}
-                      aria-labelledby="thumbnail-slider-example"
+                      <span
+                        className="text-purple-600 text-5xl"
+                        aria-hidden="true"
+                      >
+                        <SlArrowLeft></SlArrowLeft>
+                      </span>
+                      <span className="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      className="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleInterval"
+                      data-bs-slide="next"
                     >
-                      {renderSlides()}
-                    </Splide>
-                  </div>
-                  {/* End Splide carousel */}
+                      <span
+                        className="text-purple-600 text-5xl"
+                        aria-hidden="true"
+                      >
+                        <SlArrowRight></SlArrowRight>
+                      </span>
+                      <span className="visually-hidden">Next</span>
+                    </button>
+                  </div> */}
+                  {/* End Bootstrap carousel */}
                 </div>
 
                 <div id="details" className="w-full md:w-1/2">

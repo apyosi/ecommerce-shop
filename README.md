@@ -52,8 +52,8 @@
 <a href="https://www.npmjs.com/" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" /></a>
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /></a>
 <a href="https://reactrouter.com/" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" /></a>
-<a href="" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white" /></a>
-<a href="https://git-scm.com/"" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" /></a>
+<a href="https://webpack.js.org/" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white" /></a>
+<a href="https://git-scm.com/" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" /></a>
 <a href="https://github.com/" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
 <a href="https://www.markdownguide.org/" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" /></a>
 <a href="https://www.json.org/json-en.html" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white" /></a>

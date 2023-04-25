@@ -773,6 +773,7 @@
     "category": "tops",
     "thumbnail": "https://i.dummyjson.com/data/products/40/thumbnail.jpg",
     "images": [
+      "https://i.dummyjson.com/data/products/40/thumbnail.jpg",
       "https://i.dummyjson.com/data/products/40/1.jpg",
       "https://i.dummyjson.com/data/products/40/2.jpg"
     ],
@@ -970,7 +971,8 @@
     "images": [
       "https://i.dummyjson.com/data/products/50/1.jpeg",
       "https://i.dummyjson.com/data/products/50/2.jpg",
-      "https://i.dummyjson.com/data/products/50/3.jpg"
+      "https://i.dummyjson.com/data/products/50/3.jpg",
+      "https://i.dummyjson.com/data/products/50/thumbnail.jpg"
     ],
     "reviewed": 15
   },
@@ -1223,7 +1225,8 @@
       "https://i.dummyjson.com/data/products/63/1.jpg",
       "https://i.dummyjson.com/data/products/63/2.jpg",
       "https://i.dummyjson.com/data/products/63/3.png",
-      "https://i.dummyjson.com/data/products/63/4.jpeg"
+      "https://i.dummyjson.com/data/products/63/4.jpeg",
+      "https://i.dummyjson.com/data/products/63/thumbnail.webp"
     ],
     "reviewed": 66
   },
@@ -1318,6 +1321,7 @@
     "category": "womens-watches",
     "thumbnail": "https://i.dummyjson.com/data/products/68/thumbnail.webp",
     "images": [
+      "https://i.dummyjson.com/data/products/68/thumbnail.webp",
       "https://i.dummyjson.com/data/products/68/1.jpg",
       "https://i.dummyjson.com/data/products/68/2.jpg"
     ],

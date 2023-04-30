@@ -19,6 +19,7 @@
   <ol>
     <li><a href="#description">Description</a></li>
     <li><a href="#screenshots">Screenshots</a></li>
+    <li><a href="built-with">Built with</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -42,7 +43,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<h2 id="description">🛠️ Built with</h2>
+<h2 id="built-with">🛠️ Built with</h2>
 
 <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /></a>
 <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer" ><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /></a>
